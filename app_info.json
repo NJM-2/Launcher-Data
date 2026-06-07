@@ -2,5 +2,7 @@
   "LatestVersion": 1,
   "UpdateMessage": "تم إطلاق نسخة جديدة، يرجى التحديث!",
   "DownloadUrl": "https://discord.gg/PxHbPxAEAH",
-  "BlacklistedVersions": []
+  "BlacklistedVersions": [],
+  "BotToken": "",
+  "Note": "بين علامتين التنصيص اللي في السطر اللي فوق تحط التوكن الجديد لو انحظر البوت القديم"
 }
