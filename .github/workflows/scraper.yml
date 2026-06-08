@@ -1,0 +1,29 @@
+name: NJM Scraper Auto Update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */2 * * *'
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '10.0.x'
+
+    - name: Run Scraper
+      run: dotnet run --project NJMScraper/NJMScraper.csproj
+
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name "NJM Scraper Bot"
+        git config --global user.email "scraper@njm.com"
+        git add cars.json images/
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update cars from Telegram" && git push)
