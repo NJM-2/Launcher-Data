@@ -105,7 +105,7 @@ namespace NJMScraper
                             }
                         }
                     }
-                    catch (WTelegram.RpcException ex) when (ex.Code == 420) // FLOOD_WAIT
+                    catch (TL.RpcException ex) when (ex.Code == 420) // FLOOD_WAIT
                     {
                         Console.WriteLine($"[!] Flood wait for {ex.X} seconds. Waiting...");
                         await Task.Delay((ex.X + 1) * 1000);
@@ -163,7 +163,7 @@ namespace NJMScraper
                         emptyChunksCount++;
                     }
                 }
-                catch (WTelegram.RpcException ex) when (ex.Code == 420)
+                catch (TL.RpcException ex) when (ex.Code == 420)
                 {
                     Console.WriteLine($"[!] Flood wait for {ex.X} seconds. Waiting...");
                     await Task.Delay((ex.X + 1) * 1000);
