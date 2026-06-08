@@ -255,12 +255,58 @@ namespace NJMScraper
                     }
                 }
 
-                if (newCarsAdded > 0)
+            } // End of else block for processing new messages
+
+            // 2. Check for deleted messages
+            bool madeChanges = newCarsAdded > 0;
+            
+            if (cars.Any())
+            {
+                Console.WriteLine("[~] Checking for deleted messages...");
+                var deletedIds = new List<int>();
+                var allIds = cars.Select(c => c.MessageId).ToList();
+
+                for (int i = 0; i < allIds.Count; i += 100)
                 {
-                    Console.WriteLine($"[+] Saving {cars.Count} total cars to cars.json...");
-                    var options = new JsonSerializerOptions { WriteIndented = true, Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping };
-                    File.WriteAllText(carsJsonPath, JsonSerializer.Serialize(cars, options));
+                    var chunk = allIds.Skip(i).Take(100).ToList();
+                    var chunkIds = chunk.Select(id => (InputMessage)new InputMessageID { id = id }).ToArray();
+                    
+                    try
+                    {
+                        var res = await client.Channels_GetMessages(actualChannel, chunkIds);
+                        var validIds = res.Messages
+                                          .Where(m => !(m is MessageEmpty))
+                                          .Select(m => m.ID)
+                                          .ToHashSet();
+
+                        foreach (var reqId in chunk)
+                        {
+                            if (!validIds.Contains(reqId))
+                            {
+                                deletedIds.Add(reqId);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"[!] Deletion check error: {ex.Message}");
+                    }
+                    await Task.Delay(1000);
                 }
+
+                if (deletedIds.Any())
+                {
+                    cars.RemoveAll(c => deletedIds.Contains(c.MessageId));
+                    Console.WriteLine($"[-] Removed {deletedIds.Count} deleted cars.");
+                    madeChanges = true;
+                }
+            }
+
+            if (madeChanges)
+            {
+                Console.WriteLine($"[+] Saving {cars.Count} total cars to cars.json...");
+                var options = new JsonSerializerOptions { WriteIndented = true, Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping };
+                File.WriteAllText(carsJsonPath, JsonSerializer.Serialize(cars, options));
             }
 
             Console.WriteLine("[+] Done! You can now commit and push the changes to GitHub.");
