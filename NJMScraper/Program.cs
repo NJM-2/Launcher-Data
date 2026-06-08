@@ -129,48 +129,49 @@ namespace NJMScraper
             Console.WriteLine("[~] Fetching new messages...");
             
             var messages = new List<Message>();
-            int offsetId = 0;
+            int currentId = (maxCachedId > 0) ? maxCachedId + 1 : 1;
+            int maxEmptyChunks = 10; // Tolerate up to 1000 consecutive deleted messages!
+            int emptyChunksCount = 0;
             
-            while (true)
+            while (emptyChunksCount < maxEmptyChunks)
             {
+                var chunkIds = new List<InputMessage>();
+                for (int i = currentId; i < currentId + 100; i++)
+                {
+                    chunkIds.Add(new InputMessageID { id = i });
+                }
+                
                 try
                 {
-                    var history = await client.Messages_GetHistory(actualChannel, offset_id: offsetId, limit: 100);
-                    if (history.Messages.Length == 0) break;
+                    var res = await client.Channels_GetMessages(actualChannel, chunkIds.ToArray());
+                    var validMsgs = res.Messages.OfType<Message>().ToList();
                     
-                    bool reachedCached = false;
-                    foreach (var msgBase in history.Messages)
+                    if (validMsgs.Any())
                     {
-                        if (msgBase.ID <= maxCachedId)
-                        {
-                            reachedCached = true;
-                            break;
-                        }
-                        if (msgBase is Message msg)
-                        {
-                            messages.Add(msg);
-                        }
+                        messages.AddRange(validMsgs);
+                        emptyChunksCount = 0; // Reset counter since we found a message
+                        Console.WriteLine($"[+] Fetched {validMsgs.Count} new messages.");
                     }
-                    
-                    if (reachedCached) break;
-                    
-                    offsetId = history.Messages.Last().ID;
-                    
-                    // If we only need updates, 100 messages (1 chunk) is usually enough unless he posted >30 cars at once.
-                    if (maxCachedId > 0 && messages.Count >= 200) break; 
-                    
-                    await Task.Delay(2000);
+                    else
+                    {
+                        emptyChunksCount++;
+                    }
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"[!] Error fetching history: {ex.Message}");
-                    break;
+                    Console.WriteLine($"[!] Chunk error: {ex.Message}");
+                    break; // Stop on serious errors (like flood wait)
                 }
+                
+                currentId += 100;
+                
+                // If it's a full fetch (maxCachedId=0), don't go on forever if channel is small.
+                // 10 empty chunks = 1000 messages checked after the last valid message.
+                await Task.Delay(1000); // 1 second delay to avoid flood wait
             }
 
-            // The history comes newest-to-oldest. We MUST reverse it to oldest-to-newest
-            // so that our text -> photo -> zip matching logic works correctly!
-            messages.Reverse();
+            // Ensure they are strictly oldest to newest for proper matching
+            messages = messages.OrderBy(m => m.id).ToList();
             
             if (!messages.Any())
             {
