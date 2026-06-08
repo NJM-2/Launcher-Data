@@ -756,24 +756,6 @@
     "FileName": "Land Cruiser 2015 NJM.zip"
   },
   {
-    "MessageId": 261,
-    "Name": "⌯ Sierra 2015 ⌯",
-    "BrandId": 4,
-    "BrandName": "GMC",
-    "FileInfo": "72.79 MB  •  ZIP",
-    "ImagePath": "",
-    "FileName": "Sierra 2015 (نسخة الوكاله)NJM.zip"
-  },
-  {
-    "MessageId": 262,
-    "Name": "سيارة مجهولة",
-    "BrandId": 0,
-    "BrandName": "OTHER",
-    "FileInfo": "72.79 MB  •  ZIP",
-    "ImagePath": "",
-    "FileName": "Sierra 2015 (نسخة شكمان مجمر) NJM.zip"
-  },
-  {
     "MessageId": 266,
     "Name": "⌯ Azera_2015 ⌯",
     "BrandId": 10,
@@ -1204,5 +1186,14 @@
     "FileInfo": "149.61 MB  •  ZIP",
     "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images/thumb_409.jpg",
     "FileName": "DDson 1997 - 2016 NJM.zip"
+  },
+  {
+    "MessageId": 413,
+    "Name": "⌯ Sierra 2015 ⌯",
+    "BrandId": 4,
+    "BrandName": "GMC",
+    "FileInfo": "72.79 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images/thumb_412.jpg",
+    "FileName": "Sierra 2015 (نسخة الوكاله)NJM.zip"
   }
 ]
