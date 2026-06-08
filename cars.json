@@ -1168,5 +1168,41 @@
     "FileInfo": "354.5 MB  •  ZIP",
     "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images/thumb_397.jpg",
     "FileName": "Accord 2008 - 2012 NJM.zip"
+  },
+  {
+    "MessageId": 401,
+    "Name": "⌯ MG5 2014 ⌯",
+    "BrandId": 20,
+    "BrandName": "OTHER",
+    "FileInfo": "76.69 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images/thumb_400.jpg",
+    "FileName": "MG5 2014 NJM.zip"
+  },
+  {
+    "MessageId": 404,
+    "Name": "⌯ Yaris 2026 ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "169.13 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images/thumb_403.jpg",
+    "FileName": "Yaris 2026 NJM.zip"
+  },
+  {
+    "MessageId": 407,
+    "Name": "⌯ Cadenza 2016 ⌯",
+    "BrandId": 7,
+    "BrandName": "KIA",
+    "FileInfo": "75.85 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images/thumb_406.jpg",
+    "FileName": "Cadenza 2016 NJM.zip"
+  },
+  {
+    "MessageId": 410,
+    "Name": "⌯ DDson 1997 - 2016 ⌯",
+    "BrandId": 2,
+    "BrandName": "NISSAN",
+    "FileInfo": "149.61 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images/thumb_409.jpg",
+    "FileName": "DDson 1997 - 2016 NJM.zip"
   }
 ]
