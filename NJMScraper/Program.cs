@@ -74,6 +74,50 @@ namespace NJMScraper
                 return;
             }
 
+            if (cars.Any())
+            {
+                Console.WriteLine("[~] Checking for deleted cars...");
+                var existingIds = cars.Select(c => c.MessageId).ToList();
+                var deletedIds = new List<int>();
+                bool madeChanges = false;
+
+                for (int i = 0; i < existingIds.Count; i += 100)
+                {
+                    var chunk = existingIds.Skip(i).Take(100).ToList();
+                    var inputIds = chunk.Select(id => new InputMessageID { id = id }).ToArray<InputMessage>();
+                    
+                    try
+                    {
+                        var res = await client.Channels_GetMessages(actualChannel, inputIds);
+                        foreach (var m in res.Messages)
+                        {
+                            if (m is MessageEmpty emptyMsg)
+                            {
+                                deletedIds.Add(emptyMsg.id);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"[!] Error checking deleted messages: {ex.Message}");
+                    }
+                    await Task.Delay(1000);
+                }
+
+                if (deletedIds.Any())
+                {
+                    int removedCount = cars.RemoveAll(c => deletedIds.Contains(c.MessageId));
+                    Console.WriteLine($"[-] Removed {removedCount} deleted cars from the list.");
+                    madeChanges = true;
+                }
+                
+                if (madeChanges)
+                {
+                    var options = new JsonSerializerOptions { WriteIndented = true, Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping };
+                    File.WriteAllText(carsJsonPath, JsonSerializer.Serialize(cars, options));
+                }
+            }
+
             Console.WriteLine("[~] Fetching new messages...");
             
             var messages = new List<Message>();
