@@ -105,11 +105,17 @@ namespace NJMScraper
                             }
                         }
                     }
+                    catch (WTelegram.RpcException ex) when (ex.Code == 420) // FLOOD_WAIT
+                    {
+                        Console.WriteLine($"[!] Flood wait for {ex.X} seconds. Waiting...");
+                        await Task.Delay((ex.X + 1) * 1000);
+                        i -= 100; // Retry this chunk
+                    }
                     catch (Exception ex)
                     {
                         Console.WriteLine($"[!] Error checking deleted messages: {ex.Message}");
                     }
-                    await Task.Delay(1000);
+                    await Task.Delay(2000);
                 }
 
                 if (deletedIds.Any())
@@ -130,7 +136,7 @@ namespace NJMScraper
             
             var messages = new List<Message>();
             int currentId = (maxCachedId > 0) ? maxCachedId + 1 : 1;
-            int maxEmptyChunks = 10; // Tolerate up to 1000 consecutive deleted messages!
+            int maxEmptyChunks = 5; // Tolerate up to 500 consecutive deleted messages!
             int emptyChunksCount = 0;
             
             while (emptyChunksCount < maxEmptyChunks)
@@ -157,17 +163,20 @@ namespace NJMScraper
                         emptyChunksCount++;
                     }
                 }
+                catch (WTelegram.RpcException ex) when (ex.Code == 420)
+                {
+                    Console.WriteLine($"[!] Flood wait for {ex.X} seconds. Waiting...");
+                    await Task.Delay((ex.X + 1) * 1000);
+                    continue; // Retry this chunk without advancing currentId
+                }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"[!] Chunk error: {ex.Message}");
-                    break; // Stop on serious errors (like flood wait)
+                    break; // Stop on serious errors
                 }
                 
                 currentId += 100;
-                
-                // If it's a full fetch (maxCachedId=0), don't go on forever if channel is small.
-                // 10 empty chunks = 1000 messages checked after the last valid message.
-                await Task.Delay(1000); // 1 second delay to avoid flood wait
+                await Task.Delay(2000); // 2 second delay to avoid flood wait
             }
 
             // Ensure they are strictly oldest to newest for proper matching
@@ -255,59 +264,13 @@ namespace NJMScraper
                     }
                 }
 
+                if (newCarsAdded > 0)
+                {
+                    Console.WriteLine($"[+] Saving {cars.Count} total cars to cars.json...");
+                    var options = new JsonSerializerOptions { WriteIndented = true, Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping };
+                    File.WriteAllText(carsJsonPath, JsonSerializer.Serialize(cars, options));
+                }
             } // End of else block for processing new messages
-
-            // 2. Check for deleted messages
-            bool madeChanges = newCarsAdded > 0;
-            
-            if (cars.Any())
-            {
-                Console.WriteLine("[~] Checking for deleted messages...");
-                var deletedIds = new List<int>();
-                var allIds = cars.Select(c => c.MessageId).ToList();
-
-                for (int i = 0; i < allIds.Count; i += 100)
-                {
-                    var chunk = allIds.Skip(i).Take(100).ToList();
-                    var chunkIds = chunk.Select(id => (InputMessage)new InputMessageID { id = id }).ToArray();
-                    
-                    try
-                    {
-                        var res = await client.Channels_GetMessages(actualChannel, chunkIds);
-                        var validIds = res.Messages
-                                          .Where(m => !(m is MessageEmpty))
-                                          .Select(m => m.ID)
-                                          .ToHashSet();
-
-                        foreach (var reqId in chunk)
-                        {
-                            if (!validIds.Contains(reqId))
-                            {
-                                deletedIds.Add(reqId);
-                            }
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine($"[!] Deletion check error: {ex.Message}");
-                    }
-                    await Task.Delay(1000);
-                }
-
-                if (deletedIds.Any())
-                {
-                    cars.RemoveAll(c => deletedIds.Contains(c.MessageId));
-                    Console.WriteLine($"[-] Removed {deletedIds.Count} deleted cars.");
-                    madeChanges = true;
-                }
-            }
-
-            if (madeChanges)
-            {
-                Console.WriteLine($"[+] Saving {cars.Count} total cars to cars.json...");
-                var options = new JsonSerializerOptions { WriteIndented = true, Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping };
-                File.WriteAllText(carsJsonPath, JsonSerializer.Serialize(cars, options));
-            }
 
             Console.WriteLine("[+] Done! You can now commit and push the changes to GitHub.");
             Console.WriteLine("[+] Done! GitHub Actions will now commit and push the changes.");
