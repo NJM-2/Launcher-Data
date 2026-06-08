@@ -89,11 +89,19 @@ namespace NJMScraper
                     try
                     {
                         var res = await client.Channels_GetMessages(actualChannel, inputIds);
-                        foreach (var m in res.Messages)
+                        
+                        // Collect all valid IDs returned by Telegram
+                        var validIds = res.Messages
+                                          .Where(m => !(m is MessageEmpty))
+                                          .Select(m => m.ID)
+                                          .ToHashSet();
+
+                        // If an ID we requested is NOT in the valid returned IDs, it was deleted!
+                        foreach (var reqId in chunk)
                         {
-                            if (m is MessageEmpty emptyMsg)
+                            if (!validIds.Contains(reqId))
                             {
-                                deletedIds.Add(emptyMsg.id);
+                                deletedIds.Add(reqId);
                             }
                         }
                     }
