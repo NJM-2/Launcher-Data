@@ -18,9 +18,6 @@ namespace NJMScraper
         // تم تحديث الآيدي ليتوافق مع السيرفر الجديد
         private const long CHANNEL_ID = 4297697800; 
 
-        // رابط الصور في جيت هب
-        private const string GITHUB_RAW_BASE = "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images/";
-
         private static string Config(string what)
         {
             if (what == "api_id") return API_ID.ToString();
@@ -32,6 +29,7 @@ namespace NJMScraper
         {
             public int TopicId { get; set; }
             public string FileName { get; set; }
+            public string ImageFolder { get; set; }
             public List<CarMod> Items { get; set; } = new List<CarMod>();
         }
 
@@ -41,23 +39,26 @@ namespace NJMScraper
             Console.WriteLine("    NJM Scraper - Fetching Mods from Telegram ");
             Console.WriteLine("==============================================");
 
-            string imagesDir = "images";
-            if (!Directory.Exists(imagesDir))
-            {
-                Directory.CreateDirectory(imagesDir);
-            }
-
-            // هنا تم تعريف جميع الأقسام مع أرقام المواضيع الخاصة بها
+            // هنا تم تعريف جميع الأقسام مع مجلداتها الخاصة
             var categories = new List<CategoryInfo>
             {
-                new CategoryInfo { TopicId = 11, FileName = "cars.json" },
-                new CategoryInfo { TopicId = 12, FileName = "maps.json" },
-                new CategoryInfo { TopicId = 13, FileName = "mods.json" },
-                new CategoryInfo { TopicId = 14, FileName = "tires.json" },
-                new CategoryInfo { TopicId = 18, FileName = "graphics.json" },
-                new CategoryInfo { TopicId = 19, FileName = "tutorials.json" },
-                new CategoryInfo { TopicId = 16, FileName = "plates.json" } 
+                new CategoryInfo { TopicId = 11, FileName = "cars.json", ImageFolder = "images_cars" },
+                new CategoryInfo { TopicId = 12, FileName = "maps.json", ImageFolder = "images_maps" },
+                new CategoryInfo { TopicId = 13, FileName = "mods.json", ImageFolder = "images_mods" },
+                new CategoryInfo { TopicId = 14, FileName = "tires.json", ImageFolder = "images_tires" },
+                new CategoryInfo { TopicId = 18, FileName = "graphics.json", ImageFolder = "images_graphics" },
+                new CategoryInfo { TopicId = 19, FileName = "tutorials.json", ImageFolder = "images_tutorials" },
+                new CategoryInfo { TopicId = 16, FileName = "plates.json", ImageFolder = "images_plates" } 
             };
+
+            // إنشاء المجلدات الخاصة بكل قسم إذا لم تكن موجودة
+            foreach (var cat in categories)
+            {
+                if (!Directory.Exists(cat.ImageFolder))
+                {
+                    Directory.CreateDirectory(cat.ImageFolder);
+                }
+            }
 
             foreach (var cat in categories)
             {
@@ -210,9 +211,9 @@ namespace NJMScraper
                 foreach (var msg in messages)
                 {
                     int topicId = 0;
-                    if (msg.reply_to != null)
+                    if (msg.reply_to is MessageReplyHeader replyHeader)
                     {
-                        topicId = msg.reply_to.reply_to_top_id != 0 ? msg.reply_to.reply_to_top_id : msg.reply_to.reply_to_msg_id;
+                        topicId = replyHeader.reply_to_top_id != 0 ? replyHeader.reply_to_top_id : replyHeader.reply_to_msg_id;
                     }
                     if (topicId == 0) topicId = -1;
 
@@ -220,10 +221,10 @@ namespace NJMScraper
                     if (!topicCurrentPhoto.ContainsKey(topicId)) topicCurrentPhoto[topicId] = null;
                     if (!topicCurrentBrand.ContainsKey(topicId)) topicCurrentBrand[topicId] = 0;
 
-                    if (!string.IsNullOrWhiteSpace(msg.message) && msg.media == null)
+                    // Handle text message OR photo caption
+                    if (!string.IsNullOrWhiteSpace(msg.message))
                     {
                         string msgText = msg.message;
-                        topicCurrentBrand[topicId] = 0;
                         var match = System.Text.RegularExpressions.Regex.Match(msgText, @"#(\d+)|(\d+)#");
                         if (match.Success)
                         {
@@ -234,15 +235,29 @@ namespace NJMScraper
                                 msgText = msgText.Replace(match.Value, "");
                             }
                         }
-                        topicCurrentName[topicId] = msgText.Replace("*", "").Replace("=", "").Trim();
+                        // Only set the name if it's not empty after removing the tag
+                        string parsedName = msgText.Replace("*", "").Replace("=", "").Trim();
+                        if (!string.IsNullOrEmpty(parsedName))
+                        {
+                            topicCurrentName[topicId] = parsedName;
+                        }
                     }
-                    else if (msg.media is MessageMediaPhoto photoMedia && photoMedia.photo is Photo photo)
+
+                    if (msg.media is MessageMediaPhoto photoMedia && photoMedia.photo is Photo photo)
                     {
                         string photoFileName = $"thumb_{msg.id}.jpg";
-                        string photoPath = Path.Combine(imagesDir, photoFileName);
+                        var targetCategory = categories.FirstOrDefault(c => c.TopicId == topicId);
+                        string targetImageFolder = targetCategory?.ImageFolder ?? "images_other";
+                        
+                        if (!Directory.Exists(targetImageFolder))
+                        {
+                            Directory.CreateDirectory(targetImageFolder);
+                        }
+
+                        string photoPath = Path.Combine(targetImageFolder, photoFileName);
                         if (!File.Exists(photoPath))
                         {
-                            Console.WriteLine($"  [~] Downloading image {photoFileName}...");
+                            Console.WriteLine($"  [~] Downloading image {photoFileName} to {targetImageFolder}...");
                             try {
                                 using var fs = File.Create(photoPath);
                                 await client.DownloadFileAsync(photo, fs);
@@ -265,7 +280,13 @@ namespace NJMScraper
                             bName = brandNames[topicCurrentBrand[topicId] - 1];
                         }
 
-                        string finalImagePath = topicCurrentPhoto[topicId] != null ? GITHUB_RAW_BASE + topicCurrentPhoto[topicId] : "";
+                        var targetCategory = categories.FirstOrDefault(c => c.TopicId == topicId);
+
+                        string finalImagePath = "";
+                        if (topicCurrentPhoto[topicId] != null && targetCategory != null)
+                        {
+                            finalImagePath = $"https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/{targetCategory.ImageFolder}/{topicCurrentPhoto[topicId]}";
+                        }
 
                         var newItem = new CarMod {
                             MessageId = msg.id,
@@ -277,8 +298,6 @@ namespace NJMScraper
                             FileName = fileName
                         };
 
-                        var targetCategory = categories.FirstOrDefault(c => c.TopicId == topicId);
-                        
                         if (targetCategory != null)
                         {
                             targetCategory.Items.Add(newItem);
