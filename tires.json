@@ -13,5 +13,57 @@
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tires/thumb_470.jpg"
     ],
     "FileName": "جنوط نجمه.rar"
+  },
+  {
+    "MessageId": 477,
+    "Name": "⌯ بكج جنوط متنوعه ⌯",
+    "BrandId": 3,
+    "BrandName": "LEXUS",
+    "FileInfo": "3.49 MB  •  RAR",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tires/thumb_476.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tires/thumb_473.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tires/thumb_474.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tires/thumb_475.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tires/thumb_476.jpg"
+    ],
+    "FileName": "بكج جنوط متنوعه.rar"
+  },
+  {
+    "MessageId": 480,
+    "Name": "⌯ جنوط الفراشة ⌯",
+    "BrandId": 2,
+    "BrandName": "NISSAN",
+    "FileInfo": "7.25 MB  •  RAR",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tires/thumb_479.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tires/thumb_479.jpg"
+    ],
+    "FileName": "جنط الفراشة.rar"
+  },
+  {
+    "MessageId": 483,
+    "Name": "⌯ كفرات دراق ريس ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "50.03 MB  •  RAR",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tires/thumb_482.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tires/thumb_482.jpg"
+    ],
+    "FileName": "كفرات دراق ريس.rar"
+  },
+  {
+    "MessageId": 489,
+    "Name": "⌯ جنط أدفان ريسنج RGIII ⌯",
+    "BrandId": 2,
+    "BrandName": "NISSAN",
+    "FileInfo": "2.78 MB  •  RAR",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tires/thumb_488.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tires/thumb_487.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tires/thumb_488.jpg"
+    ],
+    "FileName": "RGIII جنط أدفان ريسنج.rar"
   }
 ]
