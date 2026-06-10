@@ -1,0 +1,41 @@
+[
+  {
+    "MessageId": 938,
+    "Name": "⌯ ماب ( إنجلترا ) ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "235.41 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_937.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_937.jpg"
+    ],
+    "FileName": "ماب ( إنجلترا ) NJM.zip"
+  },
+  {
+    "MessageId": 952,
+    "Name": "⌯ QE1 ماب ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "842.07 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_951.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_948.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_949.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_950.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_951.jpg"
+    ],
+    "FileName": "QE1_V1 NJM.zip"
+  },
+  {
+    "MessageId": 955,
+    "Name": "⌯ ماب خريص النظيم ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "368.19 MB  •  RAR",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_954.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_954.jpg"
+    ],
+    "FileName": "ماب خريص النظيم NJM.rar"
+  }
+]
