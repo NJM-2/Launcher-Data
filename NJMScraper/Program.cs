@@ -204,7 +204,7 @@ namespace NJMScraper
                 Console.WriteLine($"[~] Processing {messages.Count} new messages...");
 
                 var topicCurrentName = new Dictionary<int, string>();
-                var topicCurrentPhoto = new Dictionary<int, string>();
+                var topicCurrentPhotos = new Dictionary<int, List<string>>();
                 var topicCurrentBrand = new Dictionary<int, int>();
                 int newItemsAdded = 0;
 
@@ -218,7 +218,7 @@ namespace NJMScraper
                     if (topicId == 0) topicId = -1;
 
                     if (!topicCurrentName.ContainsKey(topicId)) topicCurrentName[topicId] = "ملف مجهول";
-                    if (!topicCurrentPhoto.ContainsKey(topicId)) topicCurrentPhoto[topicId] = null;
+                    if (!topicCurrentPhotos.ContainsKey(topicId)) topicCurrentPhotos[topicId] = new List<string>();
                     if (!topicCurrentBrand.ContainsKey(topicId)) topicCurrentBrand[topicId] = 0;
 
                     // Handle text message OR photo caption
@@ -263,7 +263,7 @@ namespace NJMScraper
                                 await client.DownloadFileAsync(photo, fs);
                             } catch { }
                         }
-                        topicCurrentPhoto[topicId] = photoFileName;
+                        topicCurrentPhotos[topicId].Add(photoFileName);
                     }
                     else if (msg.media is MessageMediaDocument docMedia && docMedia.document is Document document)
                     {
@@ -283,9 +283,15 @@ namespace NJMScraper
                         var targetCategory = categories.FirstOrDefault(c => c.TopicId == topicId);
 
                         string finalImagePath = "";
-                        if (topicCurrentPhoto[topicId] != null && targetCategory != null)
+                        var finalImagePaths = new List<string>();
+
+                        if (targetCategory != null && topicCurrentPhotos[topicId].Any())
                         {
-                            finalImagePath = $"https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/{targetCategory.ImageFolder}/{topicCurrentPhoto[topicId]}";
+                            finalImagePath = $"https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/{targetCategory.ImageFolder}/{topicCurrentPhotos[topicId].Last()}";
+                            foreach (var p in topicCurrentPhotos[topicId])
+                            {
+                                finalImagePaths.Add($"https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/{targetCategory.ImageFolder}/{p}");
+                            }
                         }
 
                         var newItem = new CarMod {
@@ -295,6 +301,7 @@ namespace NJMScraper
                             BrandName = bName,
                             FileInfo = $"{sizeMb} MB  •  {Path.GetExtension(fileName).ToUpper().Replace(".", "")}",
                             ImagePath = finalImagePath,
+                            ImagePaths = finalImagePaths,
                             FileName = fileName
                         };
 
@@ -309,7 +316,7 @@ namespace NJMScraper
                             Console.WriteLine($"  [?] Ignored message in unknown topic ID {topicId}.");
                         }
 
-                        topicCurrentPhoto[topicId] = null;
+                        topicCurrentPhotos[topicId].Clear();
                         topicCurrentBrand[topicId] = 0;
                         topicCurrentName[topicId] = "ملف مجهول";
                     }
@@ -345,6 +352,7 @@ namespace NJMScraper
         public string BrandName { get; set; }
         public string FileInfo { get; set; }
         public string ImagePath { get; set; }
+        public List<string> ImagePaths { get; set; }
         public string FileName { get; set; }
     }
 }
