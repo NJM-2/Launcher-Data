@@ -25,5 +25,5 @@ jobs:
       run: |
         git config --global user.name "NJM Scraper Bot"
         git config --global user.email "scraper@njm.com"
-        git add cars.json images/
+        git add .
         git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update cars from Telegram" && git push)
