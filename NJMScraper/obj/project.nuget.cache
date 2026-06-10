@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "qZq7q/VTYYY=",
+  "success": true,
+  "projectFilePath": "/home/runner/work/Launcher-Data/Launcher-Data/NJMScraper/NJMScraper.csproj",
+  "expectedPackageFiles": [
+    "/home/runner/.nuget/packages/wtelegramclient/4.1.1/wtelegramclient.4.1.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "NJMScraper depends on WTelegramClient (>= 4.1.0) but WTelegramClient 4.1.0 was not found. WTelegramClient 4.1.1 was resolved instead.",
+      "projectPath": "/home/runner/work/Launcher-Data/Launcher-Data/NJMScraper/NJMScraper.csproj",
+      "warningLevel": 1,
+      "filePath": "/home/runner/work/Launcher-Data/Launcher-Data/NJMScraper/NJMScraper.csproj",
+      "libraryId": "WTelegramClient",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
