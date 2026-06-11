@@ -205,6 +205,7 @@ namespace NJMScraper
 
                 var topicCurrentName = new Dictionary<int, string>();
                 var topicCurrentPhotos = new Dictionary<int, List<string>>();
+                var topicCurrentVideoMessageId = new Dictionary<int, int>();
                 var topicCurrentBrand = new Dictionary<int, int>();
                 int newItemsAdded = 0;
 
@@ -219,6 +220,7 @@ namespace NJMScraper
 
                     if (!topicCurrentName.ContainsKey(topicId)) topicCurrentName[topicId] = "ملف مجهول";
                     if (!topicCurrentPhotos.ContainsKey(topicId)) topicCurrentPhotos[topicId] = new List<string>();
+                    if (!topicCurrentVideoMessageId.ContainsKey(topicId)) topicCurrentVideoMessageId[topicId] = 0;
                     if (!topicCurrentBrand.ContainsKey(topicId)) topicCurrentBrand[topicId] = 0;
 
                     // Handle text message OR photo caption
@@ -267,6 +269,36 @@ namespace NJMScraper
                     }
                     else if (msg.media is MessageMediaDocument docMedia && docMedia.document is Document document)
                     {
+                        bool isVideo = document.attributes.Any(a => a is DocumentAttributeVideo || a is DocumentAttributeAnimated);
+                        if (isVideo)
+                        {
+                            string photoFileName = $"thumb_{msg.id}.jpg";
+                            var videoTargetCategory = categories.FirstOrDefault(c => c.TopicId == topicId);
+                            string targetImageFolder = videoTargetCategory?.ImageFolder ?? "images_other";
+                            
+                            if (!Directory.Exists(targetImageFolder))
+                            {
+                                Directory.CreateDirectory(targetImageFolder);
+                            }
+
+                            string photoPath = Path.Combine(targetImageFolder, photoFileName);
+                            if (!File.Exists(photoPath))
+                            {
+                                Console.WriteLine($"  [~] Downloading video thumbnail {photoFileName} to {targetImageFolder}...");
+                                try {
+                                    var thumb = document.thumbs?.OfType<PhotoSize>().LastOrDefault();
+                                    if (thumb != null)
+                                    {
+                                        using var fs = File.Create(photoPath);
+                                        await client.DownloadFileAsync(document, fs, thumb);
+                                    }
+                                } catch { }
+                            }
+                            topicCurrentPhotos[topicId].Add(photoFileName);
+                            topicCurrentVideoMessageId[topicId] = msg.id;
+                            continue;
+                        }
+
                         bool alreadyExists = categories.Any(c => c.Items.Any(item => item.MessageId == msg.id));
                         if (alreadyExists) continue;
 
@@ -302,6 +334,7 @@ namespace NJMScraper
                             FileInfo = $"{sizeMb} MB  •  {Path.GetExtension(fileName).ToUpper().Replace(".", "")}",
                             ImagePath = finalImagePath,
                             ImagePaths = finalImagePaths,
+                            VideoMessageId = topicCurrentVideoMessageId[topicId],
                             FileName = fileName
                         };
 
@@ -317,6 +350,7 @@ namespace NJMScraper
                         }
 
                         topicCurrentPhotos[topicId].Clear();
+                        topicCurrentVideoMessageId[topicId] = 0;
                         topicCurrentBrand[topicId] = 0;
                         topicCurrentName[topicId] = "ملف مجهول";
                     }
@@ -353,6 +387,7 @@ namespace NJMScraper
         public string FileInfo { get; set; }
         public string ImagePath { get; set; }
         public List<string> ImagePaths { get; set; }
+        public int VideoMessageId { get; set; }
         public string FileName { get; set; }
     }
 }
