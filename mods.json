@@ -9,6 +9,7 @@
     "ImagePaths": [
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_963.jpg"
     ],
+    "VideoMessageId": 0,
     "FileName": "NJM مود نعومة الشارع.zip"
   },
   {
@@ -21,6 +22,7 @@
     "ImagePaths": [
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_966.jpg"
     ],
+    "VideoMessageId": 0,
     "FileName": "NJM مود صلخ الكفرات.zip"
   },
   {
@@ -36,6 +38,7 @@
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_971.jpg",
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_972.jpg"
     ],
+    "VideoMessageId": 0,
     "FileName": "NJM بكج مود العداد.zip"
   },
   {
@@ -49,6 +52,7 @@
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_975.jpg",
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_976.jpg"
     ],
+    "VideoMessageId": 0,
     "FileName": "NJM مود الدمية.zip"
   },
   {
@@ -64,6 +68,7 @@
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_981.jpg",
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_982.jpg"
     ],
+    "VideoMessageId": 0,
     "FileName": "NJM مود الاسلحه.zip"
   },
   {
@@ -77,6 +82,7 @@
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_990.jpg",
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_991.jpg"
     ],
+    "VideoMessageId": 0,
     "FileName": "NJM كفرات جراف و بوالين.zip"
   },
   {
@@ -89,26 +95,20 @@
     "ImagePaths": [
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_994.jpg"
     ],
+    "VideoMessageId": 0,
     "FileName": "NJM مود تحسين اللعبه.zip"
   },
   {
-    "MessageId": 1000,
+    "MessageId": 1004,
     "Name": "⌯ بكج مكاين ⌯",
     "BrandId": 0,
     "BrandName": "OTHER",
-    "FileInfo": "159.47 MB  •  MP4",
-    "ImagePath": "",
-    "ImagePaths": [],
-    "FileName": "-_Clipchamp.mp4"
-  },
-  {
-    "MessageId": 1001,
-    "Name": "ملف مجهول",
-    "BrandId": 0,
-    "BrandName": "OTHER",
     "FileInfo": "619.92 MB  •  ZIP",
-    "ImagePath": "",
-    "ImagePaths": [],
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_1003.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_1003.jpg"
+    ],
+    "VideoMessageId": 1003,
     "FileName": "NJM بكج مكاين.zip"
   }
 ]

@@ -9,6 +9,7 @@
     "ImagePaths": [
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_937.jpg"
     ],
+    "VideoMessageId": 0,
     "FileName": "ماب ( إنجلترا ) NJM.zip"
   },
   {
@@ -24,6 +25,7 @@
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_950.jpg",
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_951.jpg"
     ],
+    "VideoMessageId": 0,
     "FileName": "QE1_V1 NJM.zip"
   },
   {
@@ -36,6 +38,7 @@
     "ImagePaths": [
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_954.jpg"
     ],
+    "VideoMessageId": 0,
     "FileName": "ماب خريص النظيم NJM.rar"
   }
 ]
