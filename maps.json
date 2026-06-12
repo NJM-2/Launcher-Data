@@ -40,5 +40,21 @@
     ],
     "VideoMessageId": 0,
     "FileName": "ماب خريص النظيم NJM.rar"
+  },
+  {
+    "MessageId": 1019,
+    "Name": "⌯ ماب تجريبي ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "2.78 MB  •  RAR",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1018.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1015.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1016.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1017.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1018.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "RGIII جنط أدفان ريسنج.rar"
   }
 ]
