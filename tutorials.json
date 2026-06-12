@@ -5,9 +5,9 @@
     "BrandId": 0,
     "BrandName": null,
     "FileInfo": null,
-    "ImagePath": null,
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tutorials/thumb_1006.jpg",
     "ImagePaths": [
-      "thumb_1006.jpg"
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tutorials/thumb_1006.jpg"
     ],
     "VideoMessageId": 1006,
     "FileName": ""
@@ -18,9 +18,9 @@
     "BrandId": 0,
     "BrandName": null,
     "FileInfo": null,
-    "ImagePath": null,
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tutorials/thumb_1009.jpg",
     "ImagePaths": [
-      "thumb_1009.jpg"
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tutorials/thumb_1009.jpg"
     ],
     "VideoMessageId": 1009,
     "FileName": ""
@@ -31,9 +31,9 @@
     "BrandId": 0,
     "BrandName": null,
     "FileInfo": null,
-    "ImagePath": null,
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tutorials/thumb_1011.jpg",
     "ImagePaths": [
-      "thumb_1011.jpg"
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tutorials/thumb_1011.jpg"
     ],
     "VideoMessageId": 1011,
     "FileName": ""
@@ -44,9 +44,9 @@
     "BrandId": 0,
     "BrandName": null,
     "FileInfo": null,
-    "ImagePath": null,
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tutorials/thumb_1013.jpg",
     "ImagePaths": [
-      "thumb_1013.jpg"
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_tutorials/thumb_1013.jpg"
     ],
     "VideoMessageId": 0,
     "FileName": ""
