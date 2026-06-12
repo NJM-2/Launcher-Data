@@ -266,6 +266,29 @@ namespace NJMScraper
                             } catch { }
                         }
                         topicCurrentPhotos[topicId].Add(photoFileName);
+
+                        if (topicId == 19)
+                        {
+                            var targetCat = categories.FirstOrDefault(c => c.TopicId == topicId);
+                            if (targetCat != null && !targetCat.Items.Any(item => item.MessageId == msg.id))
+                            {
+                                var carMod = new CarMod
+                                {
+                                    Name = topicCurrentName[topicId],
+                                    MessageId = msg.id,
+                                    FileName = "",
+                                    VideoMessageId = 0,
+                                    BrandId = topicCurrentBrand[topicId],
+                                    ImagePaths = new List<string>(topicCurrentPhotos[topicId])
+                                };
+                                targetCat.Items.Add(carMod);
+                                newItemsAdded++;
+                                
+                                topicCurrentName[topicId] = "ملف مجهول";
+                                topicCurrentPhotos[topicId].Clear();
+                                topicCurrentBrand[topicId] = 0;
+                            }
+                        }
                     }
                     else if (msg.media is MessageMediaDocument docMedia && docMedia.document is Document document)
                     {
@@ -296,6 +319,30 @@ namespace NJMScraper
                             }
                             topicCurrentPhotos[topicId].Add(photoFileName);
                             topicCurrentVideoMessageId[topicId] = msg.id;
+
+                            if (topicId == 19)
+                            {
+                                var targetCat = categories.FirstOrDefault(c => c.TopicId == topicId);
+                                if (targetCat != null && !targetCat.Items.Any(item => item.MessageId == msg.id))
+                                {
+                                    var carMod = new CarMod
+                                    {
+                                        Name = topicCurrentName[topicId],
+                                        MessageId = msg.id,
+                                        FileName = "",
+                                        VideoMessageId = topicCurrentVideoMessageId[topicId],
+                                        BrandId = topicCurrentBrand[topicId],
+                                        ImagePaths = new List<string>(topicCurrentPhotos[topicId])
+                                    };
+                                    targetCat.Items.Add(carMod);
+                                    newItemsAdded++;
+                                    
+                                    topicCurrentName[topicId] = "ملف مجهول";
+                                    topicCurrentPhotos[topicId].Clear();
+                                    topicCurrentVideoMessageId[topicId] = 0;
+                                    topicCurrentBrand[topicId] = 0;
+                                }
+                            }
                             continue;
                         }
 
