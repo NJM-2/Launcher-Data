@@ -1144,19 +1144,6 @@
     "FileName": "Corolla 2015 NJM.zip"
   },
   {
-    "MessageId": 778,
-    "Name": "⌯ MG5 2014 ⌯",
-    "BrandId": 20,
-    "BrandName": "OTHER",
-    "FileInfo": "76.69 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_777.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_777.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "MG5 2014 NJM.zip"
-  },
-  {
     "MessageId": 781,
     "Name": "⌯ Sonata 2014 ⌯",
     "BrandId": 10,
