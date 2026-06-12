@@ -272,6 +272,17 @@ namespace NJMScraper
                             var targetCat = categories.FirstOrDefault(c => c.TopicId == topicId);
                             if (targetCat != null && !targetCat.Items.Any(item => item.MessageId == msg.id))
                             {
+                                string tutorialImagePath = "";
+                                var tutorialImagePaths = new List<string>();
+                                if (topicCurrentPhotos[topicId].Any())
+                                {
+                                    tutorialImagePath = $"https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/{targetCat.ImageFolder}/{topicCurrentPhotos[topicId].Last()}";
+                                    foreach (var p in topicCurrentPhotos[topicId])
+                                    {
+                                        tutorialImagePaths.Add($"https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/{targetCat.ImageFolder}/{p}");
+                                    }
+                                }
+
                                 var carMod = new CarMod
                                 {
                                     Name = topicCurrentName[topicId],
@@ -279,7 +290,8 @@ namespace NJMScraper
                                     FileName = "",
                                     VideoMessageId = 0,
                                     BrandId = topicCurrentBrand[topicId],
-                                    ImagePaths = new List<string>(topicCurrentPhotos[topicId])
+                                    ImagePath = tutorialImagePath,
+                                    ImagePaths = tutorialImagePaths
                                 };
                                 targetCat.Items.Add(carMod);
                                 newItemsAdded++;
@@ -325,6 +337,17 @@ namespace NJMScraper
                                 var targetCat = categories.FirstOrDefault(c => c.TopicId == topicId);
                                 if (targetCat != null && !targetCat.Items.Any(item => item.MessageId == msg.id))
                                 {
+                                    string tutorialImagePath = "";
+                                    var tutorialImagePaths = new List<string>();
+                                    if (topicCurrentPhotos[topicId].Any())
+                                    {
+                                        tutorialImagePath = $"https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/{targetCat.ImageFolder}/{topicCurrentPhotos[topicId].Last()}";
+                                        foreach (var p in topicCurrentPhotos[topicId])
+                                        {
+                                            tutorialImagePaths.Add($"https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/{targetCat.ImageFolder}/{p}");
+                                        }
+                                    }
+
                                     var carMod = new CarMod
                                     {
                                         Name = topicCurrentName[topicId],
@@ -332,7 +355,8 @@ namespace NJMScraper
                                         FileName = "",
                                         VideoMessageId = topicCurrentVideoMessageId[topicId],
                                         BrandId = topicCurrentBrand[topicId],
-                                        ImagePaths = new List<string>(topicCurrentPhotos[topicId])
+                                        ImagePath = tutorialImagePath,
+                                        ImagePaths = tutorialImagePaths
                                     };
                                     targetCat.Items.Add(carMod);
                                     newItemsAdded++;
