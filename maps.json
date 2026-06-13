@@ -40,5 +40,21 @@
     ],
     "VideoMessageId": 0,
     "FileName": "ماب ( إنجلترا ) NJM.zip"
+  },
+  {
+    "MessageId": 1043,
+    "Name": "⌯ sonic_2025_v1 ماب ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "1930.25 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1042.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1039.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1040.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1041.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1042.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "sonic_2025_v1 NJM.zip"
   }
 ]
