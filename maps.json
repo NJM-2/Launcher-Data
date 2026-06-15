@@ -72,5 +72,21 @@
     ],
     "VideoMessageId": 0,
     "FileName": "ماب التطعيس NJM.zip"
+  },
+  {
+    "MessageId": 1063,
+    "Name": "⌯ ماب الجرادية ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "265.44 MB  •  RAR",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1062.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1059.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1060.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1061.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1062.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Al_Jaradiah_Riyadh NJM.rar"
   }
 ]
