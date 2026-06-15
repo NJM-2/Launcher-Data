@@ -56,5 +56,21 @@
     ],
     "VideoMessageId": 0,
     "FileName": "sonic_2025_v1 NJM.zip"
+  },
+  {
+    "MessageId": 1057,
+    "Name": "⌯ ماب تطعيس ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "482.85 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1056.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1053.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1054.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1055.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1056.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "ماب التطعيس NJM.zip"
   }
 ]
