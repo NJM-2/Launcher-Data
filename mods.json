@@ -110,5 +110,18 @@
     ],
     "VideoMessageId": 1003,
     "FileName": "NJM بكج مكاين.zip"
+  },
+  {
+    "MessageId": 1051,
+    "Name": "⌯ مود دخان الكفرات ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "0.03 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_1050.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_1050.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "مود دخان الكفرات NJM.zip"
   }
 ]

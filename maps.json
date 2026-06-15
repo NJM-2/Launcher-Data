@@ -56,18 +56,5 @@
     ],
     "VideoMessageId": 0,
     "FileName": "sonic_2025_v1 NJM.zip"
-  },
-  {
-    "MessageId": 1048,
-    "Name": "⌯ مود دخان الكفرات ⌯",
-    "BrandId": 0,
-    "BrandName": "OTHER",
-    "FileInfo": "0.03 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1046.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1046.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "مود دخان الكفرات NJM.zip"
   }
 ]
