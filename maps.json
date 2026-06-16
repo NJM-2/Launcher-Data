@@ -74,19 +74,80 @@
     "FileName": "ماب التطعيس NJM.zip"
   },
   {
-    "MessageId": 1063,
+    "MessageId": 1079,
+    "Name": "⌯ ماب هجوله وتصوير ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "185.99 MB  •  RAR",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1078.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1075.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1076.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1077.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1078.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Content_Creators_NJM.rar"
+  },
+  {
+    "MessageId": 1085,
     "Name": "⌯ ماب الجرادية ⌯",
     "BrandId": 0,
     "BrandName": "OTHER",
     "FileInfo": "265.44 MB  •  RAR",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1062.jpg",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1084.jpg",
     "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1059.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1060.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1061.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1062.jpg"
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1081.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1082.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1083.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1084.jpg"
     ],
     "VideoMessageId": 0,
     "FileName": "Al_Jaradiah_Riyadh NJM.rar"
+  },
+  {
+    "MessageId": 1091,
+    "Name": "⌯ دايري التشاليح - القصيم ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "157.51 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1090.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1087.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1088.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1089.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1090.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Dayiri Al-Tishalih - Al Qassim NJM.zip"
+  },
+  {
+    "MessageId": 1096,
+    "Name": "⌯ ماب مستودعات خويلد ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "107.89 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1095.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1093.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1094.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1095.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Mustawdaeat KHwylD NJM.zip"
+  },
+  {
+    "MessageId": 1100,
+    "Name": "⌯ ماب الــدائـري ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "221.38 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1099.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1098.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1099.jpg"
+    ],
+    "VideoMessageId": 1099,
+    "FileName": "drive_dayere NJM.zip"
   }
 ]
