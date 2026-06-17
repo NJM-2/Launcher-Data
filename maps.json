@@ -149,5 +149,19 @@
     ],
     "VideoMessageId": 1099,
     "FileName": "drive_dayere NJM.zip"
+  },
+  {
+    "MessageId": 1104,
+    "Name": "⌯ ماب حواري ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "152.54 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1103.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1102.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1103.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "NJM ماب حواري.zip"
   }
 ]
