@@ -379,9 +379,9 @@ namespace NJMScraper
                         double sizeMb = Math.Round(document.size / (1024.0 * 1024.0), 2);
 
                         string bName = "OTHER";
-                        if (topicId == 1108 && topicCurrentBrand[topicId] > 0 && topicCurrentBrand[topicId] <= 17)
+                        if (topicId == 1108 && topicCurrentBrand[topicId] > 0 && topicCurrentBrand[topicId] <= 18)
                         {
-                            var sportBrandNames = new[] { "BMW", "MERCEDES", "FERRARI", "LAMBORGHINI", "LAND ROVER", "PORSCHE", "BENTLEY", "ROLLS ROYCE", "AUDI", "ALFA ROMEO", "BUGATTI", "KOENIGSEGG", "DODGE", "CHEVROLET", "CADILLAC", "NISSAN", "TOYOTA" };
+                            var sportBrandNames = new[] { "BMW", "MERCEDES", "FERRARI", "LAMBORGHINI", "LAND ROVER", "PORSCHE", "BENTLEY", "ROLLS ROYCE", "AUDI", "ALFA ROMEO", "BUGATTI", "KOENIGSEGG", "DODGE", "CHEVROLET", "CADILLAC", "NISSAN", "TOYOTA", "OTHER" };
                             bName = sportBrandNames[topicCurrentBrand[topicId] - 1];
                         }
                         else if (topicCurrentBrand[topicId] > 0 && topicCurrentBrand[topicId] <= 20) 
