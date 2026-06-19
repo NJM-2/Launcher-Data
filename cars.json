@@ -377,19 +377,6 @@
     "FileName": "Patrol 2025 NJM.rar"
   },
   {
-    "MessageId": 601,
-    "Name": "⌯ Sonata 2024 ⌯",
-    "BrandId": 11,
-    "BrandName": "FORD",
-    "FileInfo": "134.1 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_600.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_600.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "Sonata 2024 NJM.zip"
-  },
-  {
     "MessageId": 604,
     "Name": "⌯ Accent 2024 ⌯",
     "BrandId": 10,
@@ -1714,5 +1701,18 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Sierra 2015 (نسخة الوكاله)NJM.zip"
+  },
+  {
+    "MessageId": 1107,
+    "Name": "⌯ Sonata 2024 ⌯",
+    "BrandId": 10,
+    "BrandName": "HYUNDAI",
+    "FileInfo": "134.1 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1106.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1106.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Sonata 2024 NJM.zip"
   }
 ]
