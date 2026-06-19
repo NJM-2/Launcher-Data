@@ -48,7 +48,8 @@ namespace NJMScraper
                 new CategoryInfo { TopicId = 14, FileName = "tires.json", ImageFolder = "images_tires" },
                 new CategoryInfo { TopicId = 18, FileName = "graphics.json", ImageFolder = "images_graphics" },
                 new CategoryInfo { TopicId = 19, FileName = "tutorials.json", ImageFolder = "images_tutorials" },
-                new CategoryInfo { TopicId = 16, FileName = "plates.json", ImageFolder = "images_plates" } 
+                new CategoryInfo { TopicId = 16, FileName = "plates.json", ImageFolder = "images_plates" },
+                new CategoryInfo { TopicId = 1108, FileName = "sport_cars.json", ImageFolder = "images_sport_cars" }
             };
 
             // إنشاء المجلدات الخاصة بكل قسم إذا لم تكن موجودة
@@ -378,7 +379,13 @@ namespace NJMScraper
                         double sizeMb = Math.Round(document.size / (1024.0 * 1024.0), 2);
 
                         string bName = "OTHER";
-                        if (topicCurrentBrand[topicId] > 0 && topicCurrentBrand[topicId] <= 20) {
+                        if (topicId == 1108 && topicCurrentBrand[topicId] > 0 && topicCurrentBrand[topicId] <= 17)
+                        {
+                            var sportBrandNames = new[] { "BMW", "MERCEDES", "FERRARI", "LAMBORGHINI", "LAND ROVER", "PORSCHE", "BENTLEY", "ROLLS ROYCE", "AUDI", "ALFA ROMEO", "BUGATTI", "KOENIGSEGG", "DODGE", "CHEVROLET", "CADILLAC", "NISSAN", "TOYOTA" };
+                            bName = sportBrandNames[topicCurrentBrand[topicId] - 1];
+                        }
+                        else if (topicCurrentBrand[topicId] > 0 && topicCurrentBrand[topicId] <= 20) 
+                        {
                             var brandNames = new[] { "TOYOTA", "NISSAN", "LEXUS", "GMC", "HONDA", "CHEVROLET", "KIA", "DODGE", "MAZDA", "HYUNDAI", "FORD", "BMW", "MERCEDES", "AUDI", "CHRYSLER", "CADILLAC", "LAND ROVER", "SUZUKI", "GENESIS", "OTHER" };
                             bName = brandNames[topicCurrentBrand[topicId] - 1];
                         }
