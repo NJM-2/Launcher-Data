@@ -49,7 +49,8 @@ namespace NJMScraper
                 new CategoryInfo { TopicId = 18, FileName = "graphics.json", ImageFolder = "images_graphics" },
                 new CategoryInfo { TopicId = 19, FileName = "tutorials.json", ImageFolder = "images_tutorials" },
                 new CategoryInfo { TopicId = 16, FileName = "plates.json", ImageFolder = "images_plates" },
-                new CategoryInfo { TopicId = 1108, FileName = "sport_cars.json", ImageFolder = "images_sport_cars" }
+                new CategoryInfo { TopicId = 1108, FileName = "sport_cars.json", ImageFolder = "images_sport_cars" },
+                new CategoryInfo { TopicId = 1123, FileName = "trucks.json", ImageFolder = "images_trucks" }
             };
 
             // إنشاء المجلدات الخاصة بكل قسم إذا لم تكن موجودة
