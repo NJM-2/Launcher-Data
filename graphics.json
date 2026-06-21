@@ -1,0 +1,18 @@
+[
+  {
+    "MessageId": 1129,
+    "Name": "⌯ جرافيكس NJM ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "228.61 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1128.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1125.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1126.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1127.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1128.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Reshade NJM.zip"
+  }
+]
