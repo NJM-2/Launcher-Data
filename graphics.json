@@ -1,16 +1,16 @@
 [
   {
-    "MessageId": 1129,
-    "Name": "⌯ جرافيكس NJM ⌯",
+    "MessageId": 1143,
+    "Name": "⌯ NJM جرافيكس ⌯",
     "BrandId": 0,
     "BrandName": "OTHER",
     "FileInfo": "228.61 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1128.jpg",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1142.jpg",
     "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1125.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1126.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1127.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1128.jpg"
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1139.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1140.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1141.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1142.jpg"
     ],
     "VideoMessageId": 0,
     "FileName": "Reshade NJM.zip"
