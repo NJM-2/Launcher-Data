@@ -50,5 +50,18 @@
     ],
     "VideoMessageId": 0,
     "FileName": "BMW 2017 - 2023 NJM.zip"
+  },
+  {
+    "MessageId": 1152,
+    "Name": "⌯ Toyota Supra 1993 - 2002 ⌯",
+    "BrandId": 17,
+    "BrandName": "TOYOTA",
+    "FileInfo": "585.44 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1151.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1151.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Toyota Supra 1993 - 2002 NJM.zip"
   }
 ]
