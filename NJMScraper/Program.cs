@@ -449,10 +449,7 @@ namespace NJMScraper
             var options = new JsonSerializerOptions { WriteIndented = true, Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping };
             foreach (var cat in categories)
             {
-                if (cat.Items.Any())
-                {
-                    File.WriteAllText(cat.FileName, JsonSerializer.Serialize(cat.Items, options));
-                }
+                File.WriteAllText(cat.FileName, JsonSerializer.Serialize(cat.Items, options));
             }
         }
     }
