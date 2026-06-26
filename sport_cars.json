@@ -37,5 +37,18 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Porsche Taycan 2023 NJM.zip"
+  },
+  {
+    "MessageId": 1146,
+    "Name": "⌯ M4 G82 2023 ⌯",
+    "BrandId": 1,
+    "BrandName": "BMW",
+    "FileInfo": "951.95 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1145.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1145.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "BMW M4 G82 2023 NJM.zip"
   }
 ]
