@@ -13,19 +13,6 @@
     "FileName": "DDson 2016 NJM.zip"
   },
   {
-    "MessageId": 517,
-    "Name": "⌯ Land Cruiser LC70 2025 ⌯",
-    "BrandId": 1,
-    "BrandName": "TOYOTA",
-    "FileInfo": "276.63 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_516.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_516.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "Land Cruiser LC70 2025 NJM.zip"
-  },
-  {
     "MessageId": 520,
     "Name": "⌯ Cruze 2026 ⌯",
     "BrandId": 6,
@@ -297,19 +284,6 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Land Cruiser 300 2025 NJM.zip"
-  },
-  {
-    "MessageId": 583,
-    "Name": "⌯ Land Cruiser LC70 2025 ⌯",
-    "BrandId": 1,
-    "BrandName": "TOYOTA",
-    "FileInfo": "276.63 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_582.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_582.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "Land Cruiser LC70 2025 NJM.zip"
   },
   {
     "MessageId": 586,
@@ -1714,5 +1688,18 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Sonata 2024 NJM.zip"
+  },
+  {
+    "MessageId": 1164,
+    "Name": "⌯ Land Cruiser LC70 2025 ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "276.61 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1163.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1163.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Land Cruiser LC70 2025 NJM.zip"
   }
 ]
