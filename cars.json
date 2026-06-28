@@ -1701,5 +1701,18 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Land Cruiser LC70 2025 NJM.zip"
+  },
+  {
+    "MessageId": 1167,
+    "Name": "⌯ MG7 2023 ⌯",
+    "BrandId": 20,
+    "BrandName": "OTHER",
+    "FileInfo": "189.1 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1166.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1166.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "MG7 2023 NJM.zip"
   }
 ]
