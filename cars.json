@@ -1714,5 +1714,18 @@
     ],
     "VideoMessageId": 0,
     "FileName": "MG7 2023 NJM.zip"
+  },
+  {
+    "MessageId": 1180,
+    "Name": "⌯ Camry 2006 ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "55.87 MB  •  RAR",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1179.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1179.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Camry 2006 NJM.rar"
   }
 ]
