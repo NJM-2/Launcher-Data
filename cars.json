@@ -1727,5 +1727,18 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Camry 2006 NJM.rar"
+  },
+  {
+    "MessageId": 1183,
+    "Name": "⌯ Yuckon 2025 ⌯",
+    "BrandId": 4,
+    "BrandName": "GMC",
+    "FileInfo": "126.82 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1182.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1182.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Yukon 2025 NJM.zip"
   }
 ]
