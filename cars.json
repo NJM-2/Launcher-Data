@@ -1740,5 +1740,18 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Yukon 2025 NJM.zip"
+  },
+  {
+    "MessageId": 1186,
+    "Name": "⌯ Pony 2025 ⌯",
+    "BrandId": 20,
+    "BrandName": "OTHER",
+    "FileInfo": "186.39 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1185.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1185.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Pony 2025 NJM.zip"
   }
 ]
