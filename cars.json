@@ -1753,5 +1753,18 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Pony 2025 NJM.zip"
+  },
+  {
+    "MessageId": 1189,
+    "Name": "⌯ Cadenza 2017 ⌯",
+    "BrandId": 7,
+    "BrandName": "KIA",
+    "FileInfo": "107.76 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1188.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1188.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Cadnza 2017 NJM.zip"
   }
 ]
