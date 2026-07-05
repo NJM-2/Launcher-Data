@@ -147,5 +147,18 @@
     ],
     "VideoMessageId": 0,
     "FileName": "NJM ماب حواري.zip"
+  },
+  {
+    "MessageId": 1192,
+    "Name": "⌯ مطار بنبان ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "116.73 MB  •  RAR",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1191.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1191.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "NJM ماب مطار بنبان.rar"
   }
 ]
