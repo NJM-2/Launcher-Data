@@ -1766,5 +1766,18 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Yaris 2017 NJM.zip"
+  },
+  {
+    "MessageId": 1204,
+    "Name": "⌯ Camry 2018 - 2024 ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "289.09 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1203.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1203.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Camry 2018 - 2024 NJM.zip"
   }
 ]
