@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "MessageId": 1208,
+    "Name": "⌯ FH3 2008 ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "146.51 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_trucks/thumb_1207.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_trucks/thumb_1207.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "VolvoFH3 2008 NJM.zip"
+  }
+]
