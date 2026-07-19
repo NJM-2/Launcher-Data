@@ -176,5 +176,21 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Al_Ghrub NJM.zip"
+  },
+  {
+    "MessageId": 1220,
+    "Name": "⌯ ماب مدرج بنبان ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "117.04 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1219.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1216.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1217.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1218.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1219.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Binban NJM.zip"
   }
 ]
