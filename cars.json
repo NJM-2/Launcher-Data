@@ -1792,5 +1792,18 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Avalon 2022 NJM.zip"
+  },
+  {
+    "MessageId": 1228,
+    "Name": "⌯ Land Cruiser 1998 ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "87.79 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1226.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1226.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Land Cruiser 1998 NJM.zip"
   }
 ]
