@@ -1805,5 +1805,18 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Land Cruiser 1998 NJM.zip"
+  },
+  {
+    "MessageId": 1231,
+    "Name": "⌯ Fortuner 2014 ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "105.82 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1230.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1230.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Fortuner 2014 NJM.zip"
   }
 ]
