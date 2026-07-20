@@ -1779,5 +1779,18 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Camry 2018 - 2024 NJM.zip"
+  },
+  {
+    "MessageId": 1224,
+    "Name": "⌯ Avalon 2022 ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "167.58 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1223.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1223.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Avalon 2022 NJM.zip"
   }
 ]
