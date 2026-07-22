@@ -39,19 +39,6 @@
     "FileName": "BMW M4 G82 2023 NJM.zip"
   },
   {
-    "MessageId": 1149,
-    "Name": "⌯ M5 2017 - 2023 ⌯",
-    "BrandId": 1,
-    "BrandName": "BMW",
-    "FileInfo": "895.62 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1148.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1148.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "BMW 2017 - 2023 NJM.zip"
-  },
-  {
     "MessageId": 1161,
     "Name": "⌯ Supra 1993 - 2002 ⌯",
     "BrandId": 17,
@@ -63,5 +50,44 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Toyota Supra 1993 - 2002 NJM.zip"
+  },
+  {
+    "MessageId": 1238,
+    "Name": "⌯ E46 2013 - 2018 ⌯",
+    "BrandId": 1,
+    "BrandName": "BMW",
+    "FileInfo": "844.58 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1237.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1237.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "BMW E46 2013 - 2018 NJM.zip"
+  },
+  {
+    "MessageId": 1241,
+    "Name": "⌯ E46 2013 - 2018 ⌯",
+    "BrandId": 1,
+    "BrandName": "BMW",
+    "FileInfo": "309.53 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1240.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1240.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "BMW X6 M 2025 NJM.zip"
+  },
+  {
+    "MessageId": 1244,
+    "Name": "⌯ M5 2017 - 2023 ⌯",
+    "BrandId": 1,
+    "BrandName": "BMW",
+    "FileInfo": "895.62 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1243.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1243.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "BMW M5 2017 - 2023 NJM.zip"
   }
 ]
