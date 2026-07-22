@@ -1818,5 +1818,18 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Fortuner 2014 NJM.zip"
+  },
+  {
+    "MessageId": 1235,
+    "Name": "⌯ Tahoe 2007-2014 ⌯",
+    "BrandId": 6,
+    "BrandName": "CHEVROLET",
+    "FileInfo": "369.7 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1234.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1234.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Tahoe 2007-2014 NJM.zip"
   }
 ]
