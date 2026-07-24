@@ -1664,45 +1664,6 @@
     "FileName": "Sierra 2015 (نسخة الوكاله)NJM.zip"
   },
   {
-    "MessageId": 1107,
-    "Name": "⌯ Sonata 2024 ⌯",
-    "BrandId": 10,
-    "BrandName": "HYUNDAI",
-    "FileInfo": "134.1 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1106.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1106.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "Sonata 2024 NJM.zip"
-  },
-  {
-    "MessageId": 1164,
-    "Name": "⌯ Land Cruiser LC70 2025 ⌯",
-    "BrandId": 1,
-    "BrandName": "TOYOTA",
-    "FileInfo": "276.61 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1163.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1163.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "Land Cruiser LC70 2025 NJM.zip"
-  },
-  {
-    "MessageId": 1167,
-    "Name": "⌯ MG7 2023 ⌯",
-    "BrandId": 20,
-    "BrandName": "OTHER",
-    "FileInfo": "189.1 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1166.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1166.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "MG7 2023 NJM.zip"
-  },
-  {
     "MessageId": 1180,
     "Name": "⌯ Camry 2006 ⌯",
     "BrandId": 1,
@@ -1714,32 +1675,6 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Camry 2006 NJM.rar"
-  },
-  {
-    "MessageId": 1183,
-    "Name": "⌯ Yuckon 2025 ⌯",
-    "BrandId": 4,
-    "BrandName": "GMC",
-    "FileInfo": "126.82 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1182.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1182.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "Yukon 2025 NJM.zip"
-  },
-  {
-    "MessageId": 1186,
-    "Name": "⌯ Pony 2025 ⌯",
-    "BrandId": 20,
-    "BrandName": "OTHER",
-    "FileInfo": "186.39 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1185.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1185.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "Pony 2025 NJM.zip"
   },
   {
     "MessageId": 1224,
@@ -1831,5 +1766,83 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Cadnza 2017 NJM.zip"
+  },
+  {
+    "MessageId": 1271,
+    "Name": "⌯ Pony 2025 ⌯",
+    "BrandId": 20,
+    "BrandName": "OTHER",
+    "FileInfo": "186.39 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1270.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1270.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Pony 2025 NJM.zip"
+  },
+  {
+    "MessageId": 1274,
+    "Name": "⌯ Yuckon 2025 ⌯",
+    "BrandId": 4,
+    "BrandName": "GMC",
+    "FileInfo": "126.82 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1273.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1273.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Yukon 2025 NJM.zip"
+  },
+  {
+    "MessageId": 1277,
+    "Name": "⌯ MG7 2023 ⌯",
+    "BrandId": 20,
+    "BrandName": "OTHER",
+    "FileInfo": "189.1 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1276.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1276.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "MG7 2023 NJM.zip"
+  },
+  {
+    "MessageId": 1283,
+    "Name": "⌯ Land Cruiser LC70 2025 ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "276.61 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1282.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1282.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Land Cruiser LC70 2025 NJM.zip"
+  },
+  {
+    "MessageId": 1286,
+    "Name": "⌯ Sonata 2024 ⌯",
+    "BrandId": 10,
+    "BrandName": "HYUNDAI",
+    "FileInfo": "134.1 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1285.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1285.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Sonata 2024 NJM.zip"
+  },
+  {
+    "MessageId": 1289,
+    "Name": "⌯ Sierra 2015 ⌯",
+    "BrandId": 4,
+    "BrandName": "GMC",
+    "FileInfo": "72.79 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1288.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1288.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Sierra 2015 (نسخة الوكاله)NJM.zip"
   }
 ]
