@@ -1831,5 +1831,18 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Sonata 2014 NJM.zip"
+  },
+  {
+    "MessageId": 1322,
+    "Name": "⌯ Sonata 2014 ⌯",
+    "BrandId": 10,
+    "BrandName": "HYUNDAI",
+    "FileInfo": "59.15 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1321.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1321.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Sonata 2014 NJM.zip"
   }
 ]
