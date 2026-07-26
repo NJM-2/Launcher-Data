@@ -1818,18 +1818,5 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Sierra Classic 1974 - 1987 NJM.zip"
-  },
-  {
-    "MessageId": 1316,
-    "Name": "⌯ Sonata 2014 ⌯",
-    "BrandId": 10,
-    "BrandName": "HYUNDAI",
-    "FileInfo": "28.77 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1315.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1315.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "Sonata 2014 NJM.zip"
   }
 ]
