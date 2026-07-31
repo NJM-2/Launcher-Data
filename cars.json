@@ -1972,5 +1972,19 @@
     "VideoMessageId": 0,
     "FileName": "Sonata 2014 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1331_Sonata_2014_NJM.zip"
+  },
+  {
+    "MessageId": 1334,
+    "Name": "⌯ Accord 2017 ⌯",
+    "BrandId": 5,
+    "BrandName": "HONDA",
+    "FileInfo": "45.68 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1333.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1333.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Accord 2017 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1334_Accord_2017_NJM.zip"
   }
 ]
