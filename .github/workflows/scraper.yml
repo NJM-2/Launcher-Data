@@ -1,29 +1,29 @@
-name: NJM Scraper Auto Update
+name: Scrape Telegram Channel
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 0 * * *'
 
 jobs:
-  scrape-and-update:
+  scrape:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4
-
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: '10.0.x'
-
-    - name: Run Scraper
-      run: dotnet run --project NJMScraper/NJMScraper.csproj
-
-    - name: Commit and Push Changes
-      run: |
-        git config --global user.name "NJM Scraper Bot"
-        git config --global user.email "scraper@njm.com"
-        git add .
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update cars from Telegram" && git push)
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.0.x'
+      - name: Run Scraper
+        run: dotnet run --project NJMScraper/NJMScraper.csproj
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit and Push
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -m "Auto-update cars and upload to GitHub Releases" || echo "No changes to commit"
+          git push
