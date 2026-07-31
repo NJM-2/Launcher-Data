@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Net.Http;
+using System.Text;
 using TL;
 using WTelegram;
 
@@ -14,8 +16,7 @@ namespace NJMScraper
         private const int API_ID = 35657043;
         private const string API_HASH = "10287bf5fc1e4e752a8af08e6b480dae";
         private const string BOT_TOKEN = "8810448629:AAGJ6aNBLKJbJNxHln_LRr04sk7zV0YwmHQ";
-        
-        // تم تحديث الآيدي ليتوافق مع السيرفر الجديد
+
         private const long CHANNEL_ID = 4297697800; 
 
         private static string Config(string what)
@@ -39,7 +40,6 @@ namespace NJMScraper
             Console.WriteLine("    NJM Scraper - Fetching Mods from Telegram ");
             Console.WriteLine("==============================================");
 
-            // هنا تم تعريف جميع الأقسام مع مجلداتها الخاصة
             var categories = new List<CategoryInfo>
             {
                 new CategoryInfo { TopicId = 11, FileName = "cars.json", ImageFolder = "images_cars" },
@@ -53,13 +53,9 @@ namespace NJMScraper
                 new CategoryInfo { TopicId = 1123, FileName = "trucks.json", ImageFolder = "images_trucks" }
             };
 
-            // إنشاء المجلدات الخاصة بكل قسم إذا لم تكن موجودة
             foreach (var cat in categories)
             {
-                if (!Directory.Exists(cat.ImageFolder))
-                {
-                    Directory.CreateDirectory(cat.ImageFolder);
-                }
+                if (!Directory.Exists(cat.ImageFolder)) Directory.CreateDirectory(cat.ImageFolder);
             }
 
             foreach (var cat in categories)
@@ -84,7 +80,7 @@ namespace NJMScraper
             {
                 if (cat.Items.Any())
                 {
-                    int m = cat.Items.Max(c => c.MessageId);
+                    int m = cat.Items.Max(c => Math.Max(c.MessageId, c.VideoMessageId));
                     if (m > maxCachedId) maxCachedId = m;
                 }
             }
@@ -214,6 +210,7 @@ namespace NJMScraper
                 foreach (var msg in messages)
                 {
                     int topicId = 0;
+
                     if (msg.reply_to is MessageReplyHeader replyHeader)
                     {
                         topicId = replyHeader.reply_to_top_id != 0 ? replyHeader.reply_to_top_id : replyHeader.reply_to_msg_id;
@@ -225,7 +222,6 @@ namespace NJMScraper
                     if (!topicCurrentVideoMessageId.ContainsKey(topicId)) topicCurrentVideoMessageId[topicId] = 0;
                     if (!topicCurrentBrand.ContainsKey(topicId)) topicCurrentBrand[topicId] = 0;
 
-                    // Handle text message OR photo caption
                     if (!string.IsNullOrWhiteSpace(msg.message))
                     {
                         string msgText = msg.message;
@@ -239,7 +235,6 @@ namespace NJMScraper
                                 msgText = msgText.Replace(match.Value, "");
                             }
                         }
-                        // Only set the name if it's not empty after removing the tag
                         string parsedName = msgText.Replace("*", "").Replace("=", "").Trim();
                         if (!string.IsNullOrEmpty(parsedName))
                         {
@@ -252,7 +247,7 @@ namespace NJMScraper
                         string photoFileName = $"thumb_{msg.id}.jpg";
                         var targetCategory = categories.FirstOrDefault(c => c.TopicId == topicId);
                         string targetImageFolder = targetCategory?.ImageFolder ?? "images_other";
-                        
+
                         if (!Directory.Exists(targetImageFolder))
                         {
                             Directory.CreateDirectory(targetImageFolder);
@@ -297,7 +292,7 @@ namespace NJMScraper
                                 };
                                 targetCat.Items.Add(carMod);
                                 newItemsAdded++;
-                                
+
                                 topicCurrentName[topicId] = "ملف مجهول";
                                 topicCurrentPhotos[topicId].Clear();
                                 topicCurrentBrand[topicId] = 0;
@@ -312,7 +307,7 @@ namespace NJMScraper
                             string photoFileName = $"thumb_{msg.id}.jpg";
                             var videoTargetCategory = categories.FirstOrDefault(c => c.TopicId == topicId);
                             string targetImageFolder = videoTargetCategory?.ImageFolder ?? "images_other";
-                            
+
                             if (!Directory.Exists(targetImageFolder))
                             {
                                 Directory.CreateDirectory(targetImageFolder);
@@ -362,7 +357,7 @@ namespace NJMScraper
                                     };
                                     targetCat.Items.Add(carMod);
                                     newItemsAdded++;
-                                    
+
                                     topicCurrentName[topicId] = "ملف مجهول";
                                     topicCurrentPhotos[topicId].Clear();
                                     topicCurrentVideoMessageId[topicId] = 0;
@@ -423,10 +418,6 @@ namespace NJMScraper
                             newItemsAdded++;
                             Console.WriteLine($"  [+] Added to {targetCategory.FileName}: {topicCurrentName[topicId]} ({sizeMb} MB)");
                         }
-                        else
-                        {
-                            Console.WriteLine($"  [?] Ignored message in unknown topic ID {topicId}.");
-                        }
 
                         topicCurrentPhotos[topicId].Clear();
                         topicCurrentVideoMessageId[topicId] = 0;
@@ -438,6 +429,145 @@ namespace NJMScraper
                 if (newItemsAdded > 0)
                 {
                     SaveAllCategories(categories);
+                }
+            }
+            
+            // ==========================================
+            // GITHUB RELEASES AUTO-UPLOAD (THE MAGIC!)
+            // ==========================================
+            Console.WriteLine("[~] Checking for items missing GitHub Download URLs...");
+            string githubToken = Environment.GetEnvironmentVariable("GITHUB_TOKEN");
+            
+            if (string.IsNullOrEmpty(githubToken))
+            {
+                Console.WriteLine("[!] GITHUB_TOKEN is not set. Skipping GitHub upload phase.");
+            }
+            else
+            {
+                using var httpClient = new HttpClient();
+                httpClient.Timeout = System.Threading.Timeout.InfiniteTimeSpan;
+                httpClient.DefaultRequestHeaders.Add("User-Agent", "NJMScraper");
+                httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {githubToken}");
+                httpClient.DefaultRequestHeaders.Add("Accept", "application/vnd.github.v3+json");
+
+                string releaseUploadUrl = "";
+                var releaseResponse = await httpClient.GetAsync("https://api.github.com/repos/NJM-2/Launcher-Data/releases/tags/mods-storage");
+                if (releaseResponse.IsSuccessStatusCode)
+                {
+                    var json = await releaseResponse.Content.ReadAsStringAsync();
+                    using var doc = JsonDocument.Parse(json);
+                    releaseUploadUrl = doc.RootElement.GetProperty("upload_url").GetString().Split('{')[0];
+                    Console.WriteLine("[+] Found existing GitHub Release 'mods-storage'.");
+                }
+                else
+                {
+                    Console.WriteLine("[~] Creating new GitHub Release 'mods-storage'...");
+                    var createPayload = new { tag_name = "mods-storage", name = "Mods Storage", body = "Automated storage for launcher mods and videos." };
+                    var createResponse = await httpClient.PostAsync("https://api.github.com/repos/NJM-2/Launcher-Data/releases", new StringContent(JsonSerializer.Serialize(createPayload), Encoding.UTF8, "application/json"));
+                    if (createResponse.IsSuccessStatusCode)
+                    {
+                        var json = await createResponse.Content.ReadAsStringAsync();
+                        using var doc = JsonDocument.Parse(json);
+                        releaseUploadUrl = doc.RootElement.GetProperty("upload_url").GetString().Split('{')[0];
+                        Console.WriteLine("[+] Created new GitHub Release successfully.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("[!] Failed to create GitHub Release: " + await createResponse.Content.ReadAsStringAsync());
+                    }
+                }
+
+                if (!string.IsNullOrEmpty(releaseUploadUrl))
+                {
+                    bool anyUploads = false;
+                    foreach (var cat in categories)
+                    {
+                        foreach (var item in cat.Items)
+                        {
+                            if (string.IsNullOrEmpty(item.DownloadUrl))
+                            {
+                                int targetMsgId = item.MessageId;
+                                
+                                // إذا كان العنصر من الشروحات ولديه مقطع فيديو
+                                if (cat.TopicId == 19 && item.VideoMessageId > 0)
+                                {
+                                    targetMsgId = item.VideoMessageId;
+                                }
+
+                                if (targetMsgId <= 0) continue;
+
+                                Console.WriteLine($"[~] Process Item '{item.Name}' (MsgId: {targetMsgId})...");
+
+                                var msgs = await client.Channels_GetMessages(actualChannel, new[] { new InputMessageID { id = targetMsgId } });
+                                var msg = msgs.Messages.OfType<Message>().FirstOrDefault();
+                                
+                                if (msg?.media is MessageMediaDocument docMedia && docMedia.document is Document doc)
+                                {
+                                    string ext = ".zip";
+                                    if (cat.TopicId == 19) ext = ".mp4";
+                                    
+                                    string tempFile = Path.Combine(Path.GetTempPath(), $"{targetMsgId}{ext}");
+                                    
+                                    Console.WriteLine($"    -> Downloading from Telegram...");
+                                    try 
+                                    {
+                                        using (var fs = File.Create(tempFile))
+                                        {
+                                            await client.DownloadFileAsync(doc, fs);
+                                        }
+                                        
+                                        Console.WriteLine($"    -> Uploading to GitHub Releases...");
+                                        string safeName = string.IsNullOrWhiteSpace(item.FileName) ? $"mod{ext}" : item.FileName;
+                                        string assetName = $"{targetMsgId}_{safeName.Replace(" ", "_")}";
+                                        
+                                        string uploadUrl = $"{releaseUploadUrl}?name={Uri.EscapeDataString(assetName)}";
+                                        
+                                        using var fileStream = File.OpenRead(tempFile);
+                                        var content = new StreamContent(fileStream);
+                                        content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
+                                        
+                                        var uploadResponse = await httpClient.PostAsync(uploadUrl, content);
+                                        if (uploadResponse.IsSuccessStatusCode)
+                                        {
+                                            var json = await uploadResponse.Content.ReadAsStringAsync();
+                                            using var jsonDoc = JsonDocument.Parse(json);
+                                            item.DownloadUrl = jsonDoc.RootElement.GetProperty("browser_download_url").GetString();
+                                            Console.WriteLine($"    -> Success! URL: {item.DownloadUrl}");
+                                            anyUploads = true;
+                                        }
+                                        else
+                                        {
+                                            string err = await uploadResponse.Content.ReadAsStringAsync();
+                                            if (err.Contains("already_exists"))
+                                            {
+                                                Console.WriteLine($"    -> Asset already exists! Recovering existing URL...");
+                                                item.DownloadUrl = $"https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/{Uri.EscapeDataString(assetName)}";
+                                                Console.WriteLine($"    -> Recovered URL: {item.DownloadUrl}");
+                                                anyUploads = true;
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine($"    -> Upload failed: {err}");
+                                            }
+                                        }
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        Console.WriteLine($"    -> Error: {ex.Message}");
+                                    }
+                                    finally
+                                    {
+                                        if (File.Exists(tempFile)) File.Delete(tempFile);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    if (anyUploads)
+                    {
+                        SaveAllCategories(categories);
+                    }
                 }
             }
 
@@ -465,5 +595,6 @@ namespace NJMScraper
         public List<string> ImagePaths { get; set; }
         public int VideoMessageId { get; set; }
         public string FileName { get; set; }
+        public string DownloadUrl { get; set; }
     }
 }
