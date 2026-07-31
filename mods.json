@@ -10,7 +10,8 @@
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_963.jpg"
     ],
     "VideoMessageId": 0,
-    "FileName": "NJM مود نعومة الشارع.zip"
+    "FileName": "NJM مود نعومة الشارع.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/964_NJM_._._.zip"
   },
   {
     "MessageId": 967,
@@ -23,7 +24,8 @@
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_966.jpg"
     ],
     "VideoMessageId": 0,
-    "FileName": "NJM مود صلخ الكفرات.zip"
+    "FileName": "NJM مود صلخ الكفرات.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/967_NJM_._._.zip"
   },
   {
     "MessageId": 973,
@@ -39,7 +41,8 @@
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_972.jpg"
     ],
     "VideoMessageId": 0,
-    "FileName": "NJM بكج مود العداد.zip"
+    "FileName": "NJM بكج مود العداد.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/973_NJM_._._.zip"
   },
   {
     "MessageId": 977,
@@ -53,7 +56,8 @@
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_976.jpg"
     ],
     "VideoMessageId": 0,
-    "FileName": "NJM مود الدمية.zip"
+    "FileName": "NJM مود الدمية.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/977_NJM_._.zip"
   },
   {
     "MessageId": 983,
@@ -69,7 +73,8 @@
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_982.jpg"
     ],
     "VideoMessageId": 0,
-    "FileName": "NJM مود الاسلحه.zip"
+    "FileName": "NJM مود الاسلحه.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/983_NJM_._.zip"
   },
   {
     "MessageId": 992,
@@ -83,7 +88,8 @@
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_991.jpg"
     ],
     "VideoMessageId": 0,
-    "FileName": "NJM كفرات جراف و بوالين.zip"
+    "FileName": "NJM كفرات جراف و بوالين.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/992_NJM_._._._.zip"
   },
   {
     "MessageId": 995,
@@ -96,7 +102,8 @@
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_994.jpg"
     ],
     "VideoMessageId": 0,
-    "FileName": "NJM مود تحسين اللعبه.zip"
+    "FileName": "NJM مود تحسين اللعبه.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/995_NJM_._._.zip"
   },
   {
     "MessageId": 1004,
@@ -109,7 +116,8 @@
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_1003.jpg"
     ],
     "VideoMessageId": 1003,
-    "FileName": "NJM بكج مكاين.zip"
+    "FileName": "NJM بكج مكاين.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1004_NJM_._.zip"
   },
   {
     "MessageId": 1051,
@@ -122,6 +130,7 @@
       "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_1050.jpg"
     ],
     "VideoMessageId": 0,
-    "FileName": "مود دخان الكفرات NJM.zip"
+    "FileName": "مود دخان الكفرات NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1051_._._._NJM.zip"
   }
 ]
