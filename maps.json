@@ -205,5 +205,22 @@
     "VideoMessageId": 0,
     "FileName": "Binban NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1220_Binban_NJM.zip"
+  },
+  {
+    "MessageId": 1361,
+    "Name": "⌯ ماب توكسك v1 ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "1249.72 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1360.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1357.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1358.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1359.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1360.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "NJM v1 ماب توكسك.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1361_NJM_v1_._.zip"
   }
 ]
