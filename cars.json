@@ -1986,19 +1986,5 @@
     "VideoMessageId": 0,
     "FileName": "Accord 2017 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1334_Accord_2017_NJM.zip"
-  },
-  {
-    "MessageId": 1364,
-    "Name": "⌯ Camry 2006 ⌯",
-    "BrandId": 1,
-    "BrandName": "TOYOTA",
-    "FileInfo": "60.94 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1363.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1363.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "Camry 2006 NJM.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1364_Camry_2006_NJM.zip"
   }
 ]
