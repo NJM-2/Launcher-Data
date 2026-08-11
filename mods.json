@@ -1,136 +1,171 @@
 [
   {
-    "MessageId": 964,
-    "Name": "⌯ مود نعومة الشارع ⌯",
-    "BrandId": 0,
-    "BrandName": "OTHER",
-    "FileInfo": "0.41 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_963.jpg",
+    "MessageId": 1378,
+    "TextMessageId": 1378,
+    "Name": "⌯ مود يحسب لك احصنة السياره ⌯",
+    "FileInfo": "",
+    "FileSize": null,
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1379.jpg",
     "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_963.jpg"
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1379.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1380.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1378_",
+    "BrandId": 1,
+    "BrandName": "تويوتا"
+  },
+  {
+    "MessageId": 964,
+    "TextMessageId": 0,
+    "Name": "⌯ مود نعومة الشارع ⌯",
+    "FileInfo": "0.41 MB  •  ZIP",
+    "FileSize": "\uD83D\uDCE6 0.41 MB",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_963.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_963.jpg"
     ],
     "VideoMessageId": 0,
     "FileName": "NJM مود نعومة الشارع.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/964_NJM_._._.zip"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/964_NJM_._._.zip",
+    "BrandId": 0,
+    "BrandName": ""
   },
   {
     "MessageId": 967,
+    "TextMessageId": 0,
     "Name": "⌯ مود صلخ الكفرات ⌯",
-    "BrandId": 0,
-    "BrandName": "OTHER",
     "FileInfo": "0.12 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_966.jpg",
+    "FileSize": "\uD83D\uDCE6 0.12 MB",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_966.jpg",
     "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_966.jpg"
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_966.jpg"
     ],
     "VideoMessageId": 0,
     "FileName": "NJM مود صلخ الكفرات.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/967_NJM_._._.zip"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/967_NJM_._._.zip",
+    "BrandId": 0,
+    "BrandName": ""
   },
   {
     "MessageId": 973,
+    "TextMessageId": 0,
     "Name": "⌯ بكج مود العداد ⌯",
-    "BrandId": 0,
-    "BrandName": "OTHER",
     "FileInfo": "0.64 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_972.jpg",
+    "FileSize": "\uD83D\uDCE6 0.64 MB",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_972.jpg",
     "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_969.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_970.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_971.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_972.jpg"
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_969.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_970.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_971.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_972.jpg"
     ],
     "VideoMessageId": 0,
     "FileName": "NJM بكج مود العداد.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/973_NJM_._._.zip"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/973_NJM_._._.zip",
+    "BrandId": 0,
+    "BrandName": ""
   },
   {
     "MessageId": 977,
+    "TextMessageId": 0,
     "Name": "⌯ مود الدمية ⌯",
-    "BrandId": 0,
-    "BrandName": "OTHER",
     "FileInfo": "13.77 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_976.jpg",
+    "FileSize": "\uD83D\uDCE6 13.77 MB",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_976.jpg",
     "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_975.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_976.jpg"
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_975.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_976.jpg"
     ],
     "VideoMessageId": 0,
     "FileName": "NJM مود الدمية.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/977_NJM_._.zip"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/977_NJM_._.zip",
+    "BrandId": 0,
+    "BrandName": ""
   },
   {
     "MessageId": 983,
+    "TextMessageId": 0,
     "Name": "⌯ مود الاسلحه ⌯",
-    "BrandId": 0,
-    "BrandName": "OTHER",
     "FileInfo": "24.14 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_982.jpg",
+    "FileSize": "\uD83D\uDCE6 24.14 MB",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_982.jpg",
     "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_979.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_980.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_981.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_982.jpg"
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_979.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_980.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_981.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_982.jpg"
     ],
     "VideoMessageId": 0,
     "FileName": "NJM مود الاسلحه.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/983_NJM_._.zip"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/983_NJM_._.zip",
+    "BrandId": 0,
+    "BrandName": ""
   },
   {
     "MessageId": 992,
+    "TextMessageId": 0,
     "Name": "⌯ كفرات جراف وبوالين ⌯",
-    "BrandId": 0,
-    "BrandName": "OTHER",
     "FileInfo": "27.19 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_991.jpg",
+    "FileSize": "\uD83D\uDCE6 27.19 MB",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_991.jpg",
     "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_990.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_991.jpg"
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_990.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_991.jpg"
     ],
     "VideoMessageId": 0,
     "FileName": "NJM كفرات جراف و بوالين.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/992_NJM_._._._.zip"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/992_NJM_._._._.zip",
+    "BrandId": 0,
+    "BrandName": ""
   },
   {
     "MessageId": 995,
+    "TextMessageId": 0,
     "Name": "⌯ مود تحسين اللعبه ⌯",
-    "BrandId": 0,
-    "BrandName": "OTHER",
     "FileInfo": "11.01 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_994.jpg",
+    "FileSize": "\uD83D\uDCE6 11.01 MB",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_994.jpg",
     "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_994.jpg"
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_994.jpg"
     ],
     "VideoMessageId": 0,
     "FileName": "NJM مود تحسين اللعبه.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/995_NJM_._._.zip"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/995_NJM_._._.zip",
+    "BrandId": 0,
+    "BrandName": ""
   },
   {
     "MessageId": 1004,
+    "TextMessageId": 0,
     "Name": "⌯ بكج مكاين ⌯",
-    "BrandId": 0,
-    "BrandName": "OTHER",
     "FileInfo": "619.92 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_1003.jpg",
+    "FileSize": "\uD83D\uDCE6 619.92 MB",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1003.jpg",
     "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_1003.jpg"
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1003.jpg"
     ],
     "VideoMessageId": 1003,
     "FileName": "NJM بكج مكاين.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1004_NJM_._.zip"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1004_NJM_._.zip",
+    "BrandId": 0,
+    "BrandName": ""
   },
   {
     "MessageId": 1051,
+    "TextMessageId": 0,
     "Name": "⌯ مود دخان الكفرات ⌯",
-    "BrandId": 0,
-    "BrandName": "OTHER",
     "FileInfo": "0.03 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_1050.jpg",
+    "FileSize": "\uD83D\uDCE6 0.03 MB",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1050.jpg",
     "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_1050.jpg"
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1050.jpg"
     ],
     "VideoMessageId": 0,
     "FileName": "مود دخان الكفرات NJM.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1051_._._._NJM.zip"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1051_._._._NJM.zip",
+    "BrandId": 0,
+    "BrandName": ""
   }
 ]
