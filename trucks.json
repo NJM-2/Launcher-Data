@@ -12,5 +12,20 @@
     "VideoMessageId": 0,
     "FileName": "VolvoFH3 2008 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1208_VolvoFH3_2008_NJM.zip"
+  },
+  {
+    "MessageId": 1419,
+    "Name": "⌯ مود يحسب لك احصنة السياره ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "0.18 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_trucks/thumb_1418.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_trucks/thumb_1417.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_trucks/thumb_1418.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "NJM مود احصنة السياره.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1419_NJM_._._.zip"
   }
 ]
