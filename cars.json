@@ -2000,5 +2000,19 @@
     "VideoMessageId": 0,
     "FileName": "DDson 1998 - 2016 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1377_DDson_1998_-_2016_NJM.zip"
+  },
+  {
+    "MessageId": 1455,
+    "Name": "⌯ Sonata 2011 - 2014 ⌯",
+    "BrandId": 10,
+    "BrandName": "HYUNDAI",
+    "FileInfo": "208.88 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1454.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1454.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Sonata 2011 - 2014 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1455_Sonata_2011_-_2014_NJM.zip"
   }
 ]
