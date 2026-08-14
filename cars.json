@@ -1638,20 +1638,6 @@
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/877_Land_Cruiser_Pickup_2006.zip"
   },
   {
-    "MessageId": 880,
-    "Name": "⌯ Lexus 2003 - 2007 ⌯",
-    "BrandId": 3,
-    "BrandName": "لكزس",
-    "FileInfo": "259.34 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_879.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_879.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "Lexus 2003 - 2007 NJM.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/880_Lexus_2003_-_2007_NJM.zip"
-  },
-  {
     "MessageId": 892,
     "Name": "⌯ Camry 2016 ⌯",
     "BrandId": 1,
@@ -2014,5 +2000,33 @@
     "VideoMessageId": 0,
     "FileName": "Sonata 2011 - 2014 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1455_Sonata_2011_-_2014_NJM.zip"
+  },
+  {
+    "MessageId": 1460,
+    "Name": "⌯ Lexus LX 2003 - 2007 ⌯",
+    "BrandId": 3,
+    "BrandName": "LEXUS",
+    "FileInfo": "253.74 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1459.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1459.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Lexus LX 2003 - 2007 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1460_Lexus_LX_2003_-_2007_NJM.zip"
+  },
+  {
+    "MessageId": 1463,
+    "Name": "⌯ Yukon 2019 ⌯",
+    "BrandId": 4,
+    "BrandName": "GMC",
+    "FileInfo": "61.96 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1462.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1462.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Yukon 2019 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1463_Yukon_2019_NJM.zip"
   }
 ]
