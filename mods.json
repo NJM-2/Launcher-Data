@@ -147,5 +147,20 @@
     "VideoMessageId": 0,
     "FileName": "NJM مود احصنة السياره.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1436_NJM_._._.zip"
+  },
+  {
+    "MessageId": 1467,
+    "Name": "⌯ مود لوحة التحكم في أضرار المركبة ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "0.23 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_1466.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_1465.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_mods/thumb_1466.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "NJM_مود_لوحة_التحكم_في_أضرار_المركبة.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1467_NJM_._._._._._.zip"
   }
 ]
