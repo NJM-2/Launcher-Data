@@ -2030,15 +2030,17 @@
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1463_Yukon_2019_NJM.zip"
   },
   {
-    "MessageId": 1475,
-    "Name": "ملف مجهول",
-    "BrandId": 0,
-    "BrandName": "OTHER",
+    "MessageId": 1478,
+    "Name": "⌯ Taurus 2023 - 2026 ⌯",
+    "BrandId": 11,
+    "BrandName": "FORD",
     "FileInfo": "292.74 MB  •  ZIP",
-    "ImagePath": "",
-    "ImagePaths": [],
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1477.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1477.jpg"
+    ],
     "VideoMessageId": 0,
     "FileName": "Taurus 2023 - 2026 NJM.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1475_Taurus_2023_-_2026_NJM.zip"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1478_Taurus_2023_-_2026_NJM.zip"
   }
 ]
