@@ -2042,5 +2042,19 @@
     "VideoMessageId": 0,
     "FileName": "Taurus 2023 - 2026 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1478_Taurus_2023_-_2026_NJM.zip"
+  },
+  {
+    "MessageId": 1481,
+    "Name": "⌯ Camry 2025 ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "279.27 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1480.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1480.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Camry 2025 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1481_Camry_2025_NJM.zip"
   }
 ]
