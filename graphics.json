@@ -1,39 +1,5 @@
 [
   {
-    "MessageId": 1143,
-    "Name": "⌯ NJM جرافيكس ⌯",
-    "BrandId": 0,
-    "BrandName": "OTHER",
-    "FileInfo": "228.61 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1142.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1139.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1140.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1141.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1142.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "Reshade NJM.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1143_Reshade_NJM.zip"
-  },
-  {
-    "MessageId": 1490,
-    "Name": "⌯ جرافيكس NJM (تنبيه يشغل على اصدرا (38) وتحت فقط) ⌯",
-    "BrandId": 0,
-    "BrandName": "OTHER",
-    "FileInfo": "228.61 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1489.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1486.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1487.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1488.jpg",
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1489.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "Reshade NJM.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1490_Reshade_NJM.zip"
-  },
-  {
     "MessageId": 1496,
     "Name": "⌯ (تنبيه شغال على إصدار [38] وتحت فقط) NJM جرافيكس ⌯",
     "BrandId": 0,
