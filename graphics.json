@@ -32,5 +32,22 @@
     "VideoMessageId": 0,
     "FileName": "Reshade NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1490_Reshade_NJM.zip"
+  },
+  {
+    "MessageId": 1496,
+    "Name": "⌯ (تنبيه شغال على إصدار [38] وتحت فقط) NJM جرافيكس ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "228.61 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1495.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1492.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1493.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1494.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_graphics/thumb_1495.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Reshade NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1496_Reshade_NJM.zip"
   }
 ]
