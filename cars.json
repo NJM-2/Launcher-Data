@@ -2098,5 +2098,19 @@
     "VideoMessageId": 0,
     "FileName": "Accord 2017 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1514_Accord_2017_NJM.zip"
+  },
+  {
+    "MessageId": 1519,
+    "Name": "⌯ LAND CRUISER LC70 2009 - 2022 ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "259.96 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1518.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1518.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "LAND CRUISER LC70 2009 - 2022 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1519_LAND_CRUISER_LC70_2009_-_2022_NJM.zip"
   }
 ]
