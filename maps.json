@@ -222,5 +222,22 @@
     "VideoMessageId": 0,
     "FileName": "NJM v1 ماب توكسك.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1361_NJM_v1_._.zip"
+  },
+  {
+    "MessageId": 1525,
+    "Name": "⌯ ماب الضوء الخافت ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "105.41 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1524.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1521.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1522.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1523.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1524.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Al_Daw_Al_Khafit NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1525_Al_Daw_Al_Khafit_NJM.zip"
   }
 ]

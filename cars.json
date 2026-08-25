@@ -2112,5 +2112,33 @@
     "VideoMessageId": 0,
     "FileName": "LAND CRUISER LC70 2009 - 2022 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1519_LAND_CRUISER_LC70_2009_-_2022_NJM.zip"
+  },
+  {
+    "MessageId": 1528,
+    "Name": "⌯ Mustang GT 2013 ⌯",
+    "BrandId": 11,
+    "BrandName": "FORD",
+    "FileInfo": "95.16 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1527.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1527.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Mustang GT 2013 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1528_Mustang_GT_2013_NJM.zip"
+  },
+  {
+    "MessageId": 1531,
+    "Name": "⌯ Silverado 2013 ⌯",
+    "BrandId": 6,
+    "BrandName": "CHEVROLET",
+    "FileInfo": "171.3 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1530.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1530.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Silverado 2013 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1531_Silverado_2013_NJM.zip"
   }
 ]
