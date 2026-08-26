@@ -2154,5 +2154,19 @@
     "VideoMessageId": 0,
     "FileName": "Elantra 2024 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1534_Elantra_2024_NJM.zip"
+  },
+  {
+    "MessageId": 1537,
+    "Name": "⌯ Maxima 1995 - 1998 ⌯",
+    "BrandId": 2,
+    "BrandName": "NISSAN",
+    "FileInfo": "159.71 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1536.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1536.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Maxima 1995 - 1998 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1537_Maxima_1995_-_1998_NJM.zip"
   }
 ]
