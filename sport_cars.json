@@ -96,5 +96,19 @@
     "VideoMessageId": 0,
     "FileName": "BMW M4 G82 2024 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1259_BMW_M4_G82_2024_NJM.zip"
+  },
+  {
+    "MessageId": 1543,
+    "Name": "⌯ RS7 2023 ⌯",
+    "BrandId": 9,
+    "BrandName": "AUDI",
+    "FileInfo": "281.67 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1542.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1542.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Audi RS7 2023 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1543_Audi_RS7_2023_NJM.zip"
   }
 ]
