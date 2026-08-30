@@ -110,5 +110,75 @@
     "VideoMessageId": 0,
     "FileName": "Audi RS7 2023 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1543_Audi_RS7_2023_NJM.zip"
+  },
+  {
+    "MessageId": 1548,
+    "Name": "⌯ CT5-V 2022 ⌯",
+    "BrandId": 15,
+    "BrandName": "CADILLAC",
+    "FileInfo": "67.36 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1547.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1547.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Cadillac CT5-V NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1548_Cadillac_CT5-V_NJM.zip"
+  },
+  {
+    "MessageId": 1551,
+    "Name": "⌯ Huracan 2023 ⌯",
+    "BrandId": 4,
+    "BrandName": "LAMBORGHINI",
+    "FileInfo": "255.96 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1550.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1550.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Lamborghini Huracan 2023 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1551_Lamborghini_Huracan_2023_NJM.zip"
+  },
+  {
+    "MessageId": 1559,
+    "Name": "⌯ M3 G80 / G81 2023 ⌯",
+    "BrandId": 1,
+    "BrandName": "BMW",
+    "FileInfo": "151.74 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1558.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1558.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "BMW M3 G80-81 2023 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1559_BMW_M3_G80-81_2023_NJM.zip"
+  },
+  {
+    "MessageId": 1562,
+    "Name": "⌯ M4 G82 / G83 2023 ⌯",
+    "BrandId": 1,
+    "BrandName": "BMW",
+    "FileInfo": "70.44 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1561.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1561.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "BMW M4 G82-83 2023 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1562_BMW_M4_G82-83_2023_NJM.zip"
+  },
+  {
+    "MessageId": 1566,
+    "Name": "⌯ M5 F90 2023 ⌯",
+    "BrandId": 1,
+    "BrandName": "BMW",
+    "FileInfo": "177.88 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1564.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_sport_cars/thumb_1564.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "BMW M5 F90 2023 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1566_BMW_M5_F90_2023_NJM.zip"
   }
 ]
