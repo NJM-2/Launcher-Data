@@ -1624,34 +1624,6 @@
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/874_Land_Cruiser_Pickup_2007_-_2016_NJM.zip"
   },
   {
-    "MessageId": 877,
-    "Name": "⌯ Land Cruiser Pickup 2006 ⌯",
-    "BrandId": 1,
-    "BrandName": "تويوتا",
-    "FileInfo": "191.13 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_876.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_876.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "Land Cruiser Pickup 2006.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/877_Land_Cruiser_Pickup_2006.zip"
-  },
-  {
-    "MessageId": 892,
-    "Name": "⌯ Camry 2016 ⌯",
-    "BrandId": 1,
-    "BrandName": "تويوتا",
-    "FileInfo": "618.47 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_891.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_891.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "Camry 2016 NJM.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/892_Camry_2016_NJM.zip"
-  },
-  {
     "MessageId": 1224,
     "Name": "⌯ Avalon 2022 ⌯",
     "BrandId": 1,
@@ -2182,5 +2154,33 @@
     "VideoMessageId": 0,
     "FileName": "Land Cruiser LC300 2022 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1540_Land_Cruiser_LC300_2022_NJM.zip"
+  },
+  {
+    "MessageId": 1569,
+    "Name": "⌯ Land Cruiser Pickup 2006 ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "191.13 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1568.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1568.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Land Cruiser Pickup 2006.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1569_Land_Cruiser_Pickup_2006.zip"
+  },
+  {
+    "MessageId": 1572,
+    "Name": "⌯ Camry 2016 ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "618.47 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1571.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1571.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Camry 2016 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1572_Camry_2016_NJM.zip"
   }
 ]
