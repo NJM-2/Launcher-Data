@@ -1596,20 +1596,6 @@
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/868_Caprice_2013_NJM.zip"
   },
   {
-    "MessageId": 871,
-    "Name": "⌯ Caprice 2006 ⌯",
-    "BrandId": 6,
-    "BrandName": "شفروليه",
-    "FileInfo": "45.91 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_870.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_870.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "Caprice 2006 NJM.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/871_Caprice_2006_NJM.zip"
-  },
-  {
     "MessageId": 874,
     "Name": "⌯ Land Cruiser Pickup 2007 - 2016 ⌯",
     "BrandId": 1,
@@ -2182,5 +2168,19 @@
     "VideoMessageId": 0,
     "FileName": "Camry 2016 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1572_Camry_2016_NJM.zip"
+  },
+  {
+    "MessageId": 1575,
+    "Name": "⌯ Caprice 2006 ⌯",
+    "BrandId": 6,
+    "BrandName": "CHEVROLET",
+    "FileInfo": "45.91 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1574.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1574.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Caprice 2006 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1575_Caprice_2006_NJM.zip"
   }
 ]
