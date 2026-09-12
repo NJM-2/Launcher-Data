@@ -2182,5 +2182,47 @@
     "VideoMessageId": 0,
     "FileName": "Caprice 2006 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1575_Caprice_2006_NJM.zip"
+  },
+  {
+    "MessageId": 1578,
+    "Name": "⌯ Corolla 2003 - 2006 ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "124.84 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1577.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1577.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Corolla 2003 - 2006 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1578_Corolla_2003_-_2006_NJM.zip"
+  },
+  {
+    "MessageId": 1581,
+    "Name": "⌯ Vtc Pickup 2004 ⌯",
+    "BrandId": 2,
+    "BrandName": "NISSAN",
+    "FileInfo": "186.48 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1580.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1580.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Vtc Pickup 2004 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1581_Vtc_Pickup_2004_NJM.zip"
+  },
+  {
+    "MessageId": 1584,
+    "Name": "⌯ expedtion 2014 ⌯",
+    "BrandId": 11,
+    "BrandName": "FORD",
+    "FileInfo": "380.83 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1583.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1583.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "expedtion 2014 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1584_expedtion_2014_NJM.zip"
   }
 ]
