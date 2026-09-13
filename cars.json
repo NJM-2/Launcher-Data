@@ -2252,5 +2252,19 @@
     "VideoMessageId": 0,
     "FileName": "280ZX 1979 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1590_280ZX_1979_NJM.zip"
+  },
+  {
+    "MessageId": 1593,
+    "Name": "⌯ Innova 2016 - 2022 ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "171.18 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1592.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1592.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Innova 2016 - 2022 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1593_Innova_2016_-_2022_NJM.zip"
   }
 ]
