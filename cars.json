@@ -2224,5 +2224,33 @@
     "VideoMessageId": 0,
     "FileName": "expedtion 2014 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1584_expedtion_2014_NJM.zip"
+  },
+  {
+    "MessageId": 1587,
+    "Name": "⌯ Range Rover Vogue 2014 ⌯",
+    "BrandId": 17,
+    "BrandName": "LAND ROVER",
+    "FileInfo": "215.59 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1586.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1586.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Range Rover Vogue 2014 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1587_Range_Rover_Vogue_2014_NJM.zip"
+  },
+  {
+    "MessageId": 1590,
+    "Name": "⌯ 280ZX 1979 ⌯",
+    "BrandId": 2,
+    "BrandName": "NISSAN",
+    "FileInfo": "328.85 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1589.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1589.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "280ZX 1979 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1590_280ZX_1979_NJM.zip"
   }
 ]
