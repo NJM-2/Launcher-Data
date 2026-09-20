@@ -2266,5 +2266,19 @@
     "VideoMessageId": 0,
     "FileName": "Innova 2016 - 2022 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1593_Innova_2016_-_2022_NJM.zip"
+  },
+  {
+    "MessageId": 1596,
+    "Name": "⌯ Patrol Pickup 1997 ⌯",
+    "BrandId": 2,
+    "BrandName": "NISSAN",
+    "FileInfo": "219.43 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1595.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1595.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Nissan Patrol 1997 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1596_Nissan_Patrol_1997_NJM.zip"
   }
 ]
