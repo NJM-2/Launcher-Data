@@ -2280,5 +2280,19 @@
     "VideoMessageId": 0,
     "FileName": "Nissan Patrol 1997 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1596_Nissan_Patrol_1997_NJM.zip"
+  },
+  {
+    "MessageId": 1599,
+    "Name": "⌯ Yaris 2014 - 2017 ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "379.91 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1598.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1598.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Yaris 2014 - 2017 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1599_Yaris_2014_-_2017_NJM.zip"
   }
 ]
