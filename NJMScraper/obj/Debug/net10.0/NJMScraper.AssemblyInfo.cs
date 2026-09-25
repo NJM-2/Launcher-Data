@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NJMScraper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cddfd9c9704f54936ea5f2de4cff861417c7b3a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+452b7f8effb4c6666f43d121b7b4ee6b8d742bc1")]
 [assembly: System.Reflection.AssemblyProductAttribute("NJMScraper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NJMScraper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
