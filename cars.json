@@ -2296,20 +2296,6 @@
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1599_Yaris_2014_-_2017_NJM.zip"
   },
   {
-    "MessageId": 1602,
-    "Name": "⌯ Camry 2004 ⌯",
-    "BrandId": 1,
-    "BrandName": "TOYOTA",
-    "FileInfo": "389.56 MB  •  ZIP",
-    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1601.jpg",
-    "ImagePaths": [
-      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1601.jpg"
-    ],
-    "VideoMessageId": 0,
-    "FileName": "Camry 2004 NJM.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1602_Camry_2004_NJM.zip"
-  },
-  {
     "MessageId": 1605,
     "Name": "⌯ Hilux 2016 - 2025 ⌯",
     "BrandId": 1,
@@ -2322,5 +2308,33 @@
     "VideoMessageId": 0,
     "FileName": "Hilux 2016 - 2025 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1605_Hilux_2016_-_2025_NJM.zip"
+  },
+  {
+    "MessageId": 1608,
+    "Name": "⌯ Camry 2004 ⌯",
+    "BrandId": 1,
+    "BrandName": "TOYOTA",
+    "FileInfo": "406.77 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1607.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1607.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Camry 2004 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1608_Camry_2004_NJM.zip"
+  },
+  {
+    "MessageId": 1611,
+    "Name": "⌯ Azera 2021 - 2023 ⌯",
+    "BrandId": 10,
+    "BrandName": "HYUNDAI",
+    "FileInfo": "267.9 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1610.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1610.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Azera 2021 - 2023 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1611_Azera_2021_-_2023_NJM.zip"
   }
 ]
