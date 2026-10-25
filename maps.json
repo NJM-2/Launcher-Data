@@ -239,5 +239,39 @@
     "VideoMessageId": 0,
     "FileName": "Al_Daw_Al_Khafit NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1525_Al_Daw_Al_Khafit_NJM.zip"
+  },
+  {
+    "MessageId": 1629,
+    "Name": "⌯ ماب توكسك كراش ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "753.16 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1628.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1625.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1626.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1627.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1628.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Toxic_crash_v1 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1629_Toxic_crash_v1_NJM.zip"
+  },
+  {
+    "MessageId": 1635,
+    "Name": "⌯ ماب الرياض ⌯",
+    "BrandId": 0,
+    "BrandName": "OTHER",
+    "FileInfo": "423.78 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1634.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1631.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1632.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1633.jpg",
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_maps/thumb_1634.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Maps Riyadh NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1635_Maps_Riyadh_NJM.zip"
   }
 ]
