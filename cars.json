@@ -2364,5 +2364,19 @@
     "VideoMessageId": 0,
     "FileName": "Camry 2012 - 2015 NJM.zip",
     "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1623_Camry_2012_-_2015_NJM.zip"
+  },
+  {
+    "MessageId": 1638,
+    "Name": "⌯ Cruze 2026 ⌯",
+    "BrandId": 6,
+    "BrandName": "CHEVROLET",
+    "FileInfo": "209.07 MB  •  ZIP",
+    "ImagePath": "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1637.jpg",
+    "ImagePaths": [
+      "https://raw.githubusercontent.com/NJM-2/Launcher-Data/main/images_cars/thumb_1637.jpg"
+    ],
+    "VideoMessageId": 0,
+    "FileName": "Cruze 2026 NJM.zip",
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1638_Cruze_2026_NJM.zip"
   }
 ]
