@@ -16,3 +16,4 @@
 /home/runner/work/Launcher-Data/Launcher-Data/NJMScraper/obj/Debug/net10.0/NJMScraper.pdb
 /home/runner/work/Launcher-Data/Launcher-Data/NJMScraper/obj/Debug/net10.0/NJMScraper.genruntimeconfig.cache
 /home/runner/work/Launcher-Data/Launcher-Data/NJMScraper/obj/Debug/net10.0/ref/NJMScraper.dll
+/home/runner/work/Launcher-Data/Launcher-Data/NJMScraper/bin/Debug/net10.0/NJMScraper.runtimeconfig.dev.json

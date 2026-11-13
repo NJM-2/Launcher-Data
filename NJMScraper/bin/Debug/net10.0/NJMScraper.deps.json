@@ -18,7 +18,8 @@
         "runtime": {
           "lib/net8.0/WTelegramClient.dll": {
             "assemblyVersion": "4.1.1.0",
-            "fileVersion": "4.1.1.0"
+            "fileVersion": "4.1.1.0",
+            "localPath": "WTelegramClient.dll"
           }
         }
       }
