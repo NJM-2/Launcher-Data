@@ -13,11 +13,11 @@ namespace NJMScraper
 {
     class Program
     {
-        private const int API_ID = 35657043;
-        private const string API_HASH = "10287bf5fc1e4e752a8af08e6b480dae";
-        private const string BOT_TOKEN = "8810448629:AAGJ6aNBLKJbJNxHln_LRr04sk7zV0YwmHQ";
+        private static readonly int API_ID = int.Parse(Environment.GetEnvironmentVariable("TG_API_ID") ?? "0");
+        private static readonly string API_HASH = Environment.GetEnvironmentVariable("TG_API_HASH") ?? "";
+        private static readonly string BOT_TOKEN = Environment.GetEnvironmentVariable("TG_BOT_TOKEN") ?? "";
 
-        private const long CHANNEL_ID = 4297697800; 
+        private static readonly long CHANNEL_ID = long.Parse(Environment.GetEnvironmentVariable("TG_CHANNEL_ID") ?? "0"); 
 
         private static string Config(string what)
         {
