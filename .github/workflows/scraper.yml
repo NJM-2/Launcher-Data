@@ -1,29 +1,46 @@
-name: Scrape Telegram Channel
+name: Auto Update Cars from Telegram
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '7.0.x'
+          dotnet-version: '8.0.x'
+
       - name: Run Scraper
-        run: dotnet run --project NJMScraper/NJMScraper.csproj
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Commit and Push
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          TG_API_ID: ${{ secrets.TG_API_ID }}
+          TG_API_HASH: ${{ secrets.TG_API_HASH }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHANNEL_ID: ${{ secrets.TG_CHANNEL_ID }}
+        run: |
+          cd NJMScraper
+          dotnet run
+
+      - name: Clean temporary build and session files
+        run: |
+          rm -f scraper.session NJMScraper/scraper.session
+          rm -rf NJMScraper/bin NJMScraper/obj
+
+      - name: Commit and Push changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add .
-          git commit -m "Auto-update cars and upload to GitHub Releases" || echo "No changes to commit"
-          git push
+          git rm -f --ignore-unmatch scraper.session NJMScraper/scraper.session
+          git add *.json images_*/* .github/workflows/scraper.yml NJMScraper/Program.cs NJMScraper/NJMScraper.csproj
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update cars and upload to GitHub Releases" && git push)
