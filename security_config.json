@@ -6,8 +6,14 @@
   "device_ban_role_id": "1571907371473707109",
 
   "شرح 3": "رابط الويب هوك الخاص بروم السجلات في الديسكورد (مشفر)",
-  "security_webhook_url": "ENC:rjwazgx7x33gsDfVOj2DEzW1kefuFJ9v/kBMvP62AcAXuf4gVng3i9IqaAQK40E2++x5JOf+mKQDPOvoDnE15DuDoRY5SMTg0qNnTqGgrPKvViZIR85r4zVlagiSBPm45a/kq5H+Hb+QF0AkFEMsKM7TcWXaE/2FLqnWZZtom/mKr7du2l7iCzCWQ6HXvpy5"
+  "security_webhook_url": "ENC:rjwazgx7x33gsDfVOj2DEzW1kefuFJ9v/kBMvP62AcAXuf4gVng3i9IqaAQK40E2++x5JOf+mKQDPOvoDnE15DuDoRY5SMTg0qNnTqGgrPKvViZIR85r4zVlagiSBPm45a/kq5H+Hb+QF0AkFEMsKM7TcWXaE/2FLqnWZZtom/mKr7du2l7iCzCWQ6HXvpy5",
 
   "شرح 4": "توكن بوت حماية البرنامج في الديسكورد (مشفر)",
-  "discord_bot_token": "ENC:edmtEEAuEleSYh/gdPhRCAeVyCZwp6ElmVOeiM5umfb5iUEXt6F2v7E7Be9LrCKH6I77vky4RoNNJoqHwm92Za5mw0MCmreum2RuQVehMGWUekNnpvTbxmRZLsT0A3Wc"
+  "discord_bot_token": "ENC:edmtEEAuEleSYh/gdPhRCAeVyCZwp6ElmVOeiM5umfb5iUEXt6F2v7E7Be9LrCKH6I77vky4RoNNJoqHwm92Za5mw0MCmreum2RuQVehMGWUekNnpvTbxmRZLsT0A3Wc",
+
+  "(شرح 5": "رابط الدعم (التكت",
+  "support_ticket_url": "https://discord.gg/WdZ5h87CgR",
+
+  "(شرح 6": "رابط الدعوة للسيرفر (عام",
+  "discord_invite_url": "https://discord.gg/YABg7bmy6D"
 }
