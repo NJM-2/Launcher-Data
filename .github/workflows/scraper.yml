@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
       - name: Setup .NET
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v5
         with:
           dotnet-version: '8.0.x'
 
@@ -39,6 +39,9 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git rm -f --ignore-unmatch scraper.session NJMScraper/scraper.session
+          git rm -rf --ignore-unmatch scraper.session NJMScraper/scraper.session NJMScraper/bin NJMScraper/obj
           git add *.json images_*/* .github/workflows/scraper.yml NJMScraper/Program.cs NJMScraper/NJMScraper.csproj
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update cars and upload to GitHub Releases" && git push)
+          if ! git diff --staged --quiet; then
+            git commit -m "Auto-update cars and upload to GitHub Releases"
+            git push
+          fi
