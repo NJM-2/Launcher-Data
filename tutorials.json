@@ -11,7 +11,8 @@
     ],
     "VideoMessageId": 1006,
     "FileName": "",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1006_mod.mp4"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1006_mod.mp4",
+    "VideoUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1006_mod.mp4"
   },
   {
     "MessageId": 1009,
@@ -25,7 +26,8 @@
     ],
     "VideoMessageId": 1009,
     "FileName": "",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1009_mod.mp4"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1009_mod.mp4",
+    "VideoUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1009_mod.mp4"
   },
   {
     "MessageId": 1011,
@@ -39,7 +41,8 @@
     ],
     "VideoMessageId": 1011,
     "FileName": "",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1011_mod.mp4"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1011_mod.mp4",
+    "VideoUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1011_mod.mp4"
   },
   {
     "MessageId": 1013,
@@ -53,6 +56,7 @@
     ],
     "VideoMessageId": 0,
     "FileName": "",
-    "DownloadUrl": null
+    "DownloadUrl": null,
+    "VideoUrl": null
   }
 ]

@@ -11,7 +11,8 @@
     ],
     "VideoMessageId": 0,
     "FileName": "VolvoFH3 2008 NJM.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1208_VolvoFH3_2008_NJM.zip"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1208_VolvoFH3_2008_NJM.zip",
+    "VideoUrl": null
   },
   {
     "MessageId": 1617,
@@ -25,6 +26,7 @@
     ],
     "VideoMessageId": 0,
     "FileName": "Mercedes Benz 1924 NJM.zip",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1617_Mercedes_Benz_1924_NJM.zip"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/1617_Mercedes_Benz_1924_NJM.zip",
+    "VideoUrl": null
   }
 ]

@@ -14,7 +14,8 @@
     ],
     "VideoMessageId": 0,
     "FileName": "جنوط نجمه.rar",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/471_._.rar"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/471_._.rar",
+    "VideoUrl": null
   },
   {
     "MessageId": 483,
@@ -28,7 +29,8 @@
     ],
     "VideoMessageId": 0,
     "FileName": "كفرات دراق ريس.rar",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/483_._._.rar"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/483_._._.rar",
+    "VideoUrl": null
   },
   {
     "MessageId": 922,
@@ -45,7 +47,8 @@
     ],
     "VideoMessageId": 0,
     "FileName": "بكج جنوط متنوعه.rar",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/922_._._.rar"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/922_._._.rar",
+    "VideoUrl": null
   },
   {
     "MessageId": 926,
@@ -60,7 +63,8 @@
     ],
     "VideoMessageId": 0,
     "FileName": "جنط الفراشة.rar",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/926_._.rar"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/926_._.rar",
+    "VideoUrl": null
   },
   {
     "MessageId": 929,
@@ -74,6 +78,7 @@
     ],
     "VideoMessageId": 0,
     "FileName": "RGIII جنط أدفان ريسنج.rar",
-    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/929_RGIII_._._.rar"
+    "DownloadUrl": "https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/929_RGIII_._._.rar",
+    "VideoUrl": null
   }
 ]
