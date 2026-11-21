@@ -13,11 +13,10 @@ namespace NJMScraper
 {
     class Program
     {
-        private static readonly int API_ID = int.Parse(Environment.GetEnvironmentVariable("TG_API_ID") ?? "0");
-        private static readonly string API_HASH = Environment.GetEnvironmentVariable("TG_API_HASH") ?? "";
-        private static readonly string BOT_TOKEN = Environment.GetEnvironmentVariable("TG_BOT_TOKEN") ?? "";
-
-        private static readonly long CHANNEL_ID = long.Parse(Environment.GetEnvironmentVariable("TG_CHANNEL_ID") ?? "0"); 
+        private static int API_ID => int.TryParse(Environment.GetEnvironmentVariable("TG_API_ID"), out int id) ? id : 0;
+        private static string API_HASH => Environment.GetEnvironmentVariable("TG_API_HASH") ?? "";
+        private static string BOT_TOKEN => Environment.GetEnvironmentVariable("TG_BOT_TOKEN") ?? "";
+        private static long CHANNEL_ID => long.TryParse(Environment.GetEnvironmentVariable("TG_CHANNEL_ID"), out long cid) ? cid : 0;
 
         private static string Config(string what)
         {
@@ -561,6 +560,77 @@ namespace NJMScraper
                                     }
                                 }
                             }
+
+                            // Auto-upload preview / tutorial videos to GitHub Releases (VideoUrl)
+                            if (item.VideoMessageId > 0 && string.IsNullOrEmpty(item.VideoUrl))
+                            {
+                                // For Tutorials (Topic 19), DownloadUrl is already the .mp4 video URL
+                                if (cat.TopicId == 19 && !string.IsNullOrEmpty(item.DownloadUrl))
+                                {
+                                    item.VideoUrl = item.DownloadUrl;
+                                    anyUploads = true;
+                                }
+                                else
+                                {
+                                    Console.WriteLine($"[~] Process Video for '{item.Name}' (VideoMsgId: {item.VideoMessageId})...");
+                                    var vMsgs = await client.Channels_GetMessages(actualChannel, new[] { new InputMessageID { id = item.VideoMessageId } });
+                                    var vMsg = vMsgs.Messages.OfType<Message>().FirstOrDefault();
+
+                                    if (vMsg?.media is MessageMediaDocument vDocMedia && vDocMedia.document is Document vDoc)
+                                    {
+                                        string tempVidFile = Path.Combine(Path.GetTempPath(), $"video_{item.VideoMessageId}.mp4");
+                                        Console.WriteLine("    -> Downloading video from Telegram...");
+                                        try
+                                        {
+                                            using (var fs = File.Create(tempVidFile))
+                                            {
+                                                await client.DownloadFileAsync(vDoc, fs);
+                                            }
+
+                                            Console.WriteLine("    -> Uploading video to GitHub Releases...");
+                                            string videoAssetName = $"video_{item.VideoMessageId}.mp4";
+                                            string videoUploadUrl = $"{releaseUploadUrl}?name={Uri.EscapeDataString(videoAssetName)}";
+
+                                            using var vidStream = File.OpenRead(tempVidFile);
+                                            var vidContent = new StreamContent(vidStream);
+                                            vidContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("video/mp4");
+
+                                            var vidResp = await httpClient.PostAsync(videoUploadUrl, vidContent);
+                                            if (vidResp.IsSuccessStatusCode)
+                                            {
+                                                var vJson = await vidResp.Content.ReadAsStringAsync();
+                                                using var vJsonDoc = JsonDocument.Parse(vJson);
+                                                item.VideoUrl = vJsonDoc.RootElement.GetProperty("browser_download_url").GetString();
+                                                Console.WriteLine($"    -> Video Success! URL: {item.VideoUrl}");
+                                                anyUploads = true;
+                                            }
+                                            else
+                                            {
+                                                string err = await vidResp.Content.ReadAsStringAsync();
+                                                if (err.Contains("already_exists"))
+                                                {
+                                                    Console.WriteLine("    -> Video asset already exists! Recovering existing URL...");
+                                                    item.VideoUrl = $"https://github.com/NJM-2/Launcher-Data/releases/download/mods-storage/{Uri.EscapeDataString(videoAssetName)}";
+                                                    Console.WriteLine($"    -> Recovered Video URL: {item.VideoUrl}");
+                                                    anyUploads = true;
+                                                }
+                                                else
+                                                {
+                                                    Console.WriteLine($"    -> Video upload failed: {err}");
+                                                }
+                                            }
+                                        }
+                                        catch (Exception ex)
+                                        {
+                                            Console.WriteLine($"    -> Video Error: {ex.Message}");
+                                        }
+                                        finally
+                                        {
+                                            if (File.Exists(tempVidFile)) File.Delete(tempVidFile);
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
 
@@ -596,5 +666,6 @@ namespace NJMScraper
         public int VideoMessageId { get; set; }
         public string FileName { get; set; }
         public string DownloadUrl { get; set; }
+        public string VideoUrl { get; set; }
     }
 }
